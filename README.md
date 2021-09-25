@@ -1,5 +1,4 @@
 ## Welcome to GitHub Pages
-:ghost:
 
 
 
@@ -8,6 +7,8 @@ You can use the [editor on GitHub](https://github.com/YuchaoZheng88/YuchaoZheng8
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
+
+:ghost:
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
