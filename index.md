@@ -12,7 +12,7 @@
   1. VrDrummer
   
 ---
-# Learn from practice
+# Practice
   1. WebGoat
   1. SeedLab
   1. GuidedHacking
@@ -20,7 +20,7 @@
   1. KaliTools
 
 ---
-# Learn from documents
+# Theory
   1. Algorithms notes [`click`](Algorithms/0.md)
   1. Languages
   1. SystemDesign
