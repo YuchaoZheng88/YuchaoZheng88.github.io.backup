@@ -1,5 +1,5 @@
 ## Welcome to GitHub Pages
-<img src="https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png" alt="" width="96.6" height="106.4" style="max-width: 100%;">
+![Image of head](https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png?raw=true)
 
 
 
