@@ -3,11 +3,7 @@
 photo | saying
 ------------ | -------------
 Content from cell 1 | Content from cell 2
-
- 
------------- | -------------
-![](https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png?raw=true) | As Yuchao said:
-> Have a nice day!
+![](https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png?raw=true) | Have a nice day!
 Content in the first column | Content in the second column
 
 # Projects
