@@ -1,6 +1,10 @@
-# YUCHAO\`S BLOG 💻
+
+╔═╦╗───╔╗──────╔═╗──╔╗
+╚╗║╠╦╦═╣╚╦═╗╔═╗║╔╬═╦╝╠═╗
+╔╩╗║║║═╣║║╬╚╣╬║║╚╣╬║╬║╩╣
+╚══╩═╩═╩╩╩══╩═╝╚═╩═╩═╩═╝
  
- `coding music ☞` | <a href="https://www.youtube.com/watch?v=QyzK21nx70o" target="_blank">♫</a>
+ `coding music ☛` | <a href="https://www.youtube.com/watch?v=QyzK21nx70o" target="_blank">🎷🎸🎺🎻</a>
 ------------ | -------------
 ![](https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png?raw=true) | Welcome to Yuchao\`s blog.   `Have a nice day! Dude.`
 
@@ -21,7 +25,7 @@
 
 ---
 # Learn from documents
-  1. Algorithms notes [( ͡❛ ͜ʖ ͡❛)](Algorithms/0.md)
+  1. Algorithms notes [👊](Algorithms/0.md)
   1. Languages
   1. SystemDesign
   1. InternetProtocols
