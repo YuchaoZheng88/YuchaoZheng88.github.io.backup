@@ -7,14 +7,19 @@ int main(){
 }
 ```
 
-- Notes
+# Notes
   - [Algorithms notes](Algorithms/0.md)
   - System Design notes
   - CEH notes
   - SEED LAB notes
   - Languages
 
-
+-
+-
+-
+-
+-
+-
 
 
 
