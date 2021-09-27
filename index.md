@@ -1,6 +1,6 @@
 # Welcome
  
- '' | ''
+  | 
 ------------ | -------------
 ![](https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png?raw=true) | Welcome to Yuchao\`s blog.\nHave a nice day! Dude.
 
