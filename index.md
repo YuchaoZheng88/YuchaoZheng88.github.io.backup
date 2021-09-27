@@ -1,9 +1,11 @@
 ## Welcome to Yuchao\`s blog
 ![Image of head](https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png?raw=true)
 
-`int main(){
+```C++
+int main(){
   print("abc");
-}`
+}
+```
 
 
 ## asdf
