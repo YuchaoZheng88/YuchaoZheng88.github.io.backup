@@ -13,7 +13,7 @@
   
 ---
 # Practice
-  1. WebGoat
+  1. WebGoat [`click`](Practice/WebGoat/0.md)
   1. SeedLab
   1. GuidedHacking
   1. HackTheBox (IppSec)
