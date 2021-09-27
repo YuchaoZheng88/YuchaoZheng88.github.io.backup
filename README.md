@@ -34,7 +34,7 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[Link](www.google.com) and ![Image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSVRdoFyKgJTiKKednMV9v2I3o5ayE1fLsZ_pftrVYy1p9DU9c2Unb8zMHpMo&usqp=CAc)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
