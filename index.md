@@ -8,11 +8,11 @@ int main(){
 ```
 
 # Notes
-## [Algorithms notes](Algorithms/0.md)
-## System Design notes
-## CEH notes
-## SEED LAB notes
-## Languages
+  ## [Algorithms notes](Algorithms/0.md)
+  ## System Design notes
+  ## CEH notes
+  ## SEED LAB notes
+  ## Languages
 
 
 
