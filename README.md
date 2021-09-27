@@ -1,8 +1,8 @@
 ## Welcome to GitHub Pages
-src="https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png" alt="" data-canonical-src="https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png" width="200" height="400" />
+<img src="https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png" alt="" width="200" height="400" style="max-width: 100%;">
 
 
-https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png
+
 
 ## asdf
 asasdf
