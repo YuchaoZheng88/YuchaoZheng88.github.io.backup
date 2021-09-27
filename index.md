@@ -33,5 +33,4 @@
   1. StarCraft 2
 
 ---
-# Test
 [Test](Tests/0.md)
