@@ -1,6 +1,6 @@
 # Welcome
  
- `write some code` | [with some music](https://www.youtube.com/watch?v=QyzK21nx70o)
+ `write some code` | [with music](https://www.youtube.com/watch?v=QyzK21nx70o)
 ------------ | -------------
 ![](https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png?raw=true) | Welcome to Yuchao\`s blog.   `Have a nice day! Dude.`
 
