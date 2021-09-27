@@ -33,4 +33,4 @@
   1. StarCraft 2
 
 ---
-[Test](Tests/0.md)
+[t](Tests/0.md)
