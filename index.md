@@ -1,4 +1,4 @@
-# YUCHAO`s ⓑⓛⓞⓖ
+# YUCHAO`s blog
  
  `coding music       ☛` | <a href="https://www.bilibili.com/video/BV14h41167Y8" target="_blank">🎷🎸🎺🎻</a>
 ------------ | -------------
@@ -21,7 +21,7 @@
 
 ---
 # Learn from documents
-  1. Algorithms notes [👊](Algorithms/0.md)
+  1. Algorithms notes ['click'](Algorithms/0.md)
   1. Languages
   1. SystemDesign
   1. InternetProtocols
