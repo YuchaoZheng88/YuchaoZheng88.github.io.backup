@@ -1,4 +1,4 @@
-### Welcome to Yuchao\`s blog
+# Welcome to Yuchao\`s blog
 ![Image of head](https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png?raw=true)
 
 ```cpp
@@ -7,7 +7,7 @@ int main(){
 }
 ```
 
-### Notes
+# Notes
 ## [Algorithms notes](Algorithms/0.md)
 ## System Design notes
 ## CEH notes
@@ -21,7 +21,7 @@ int main(){
 
 
 
-### Tests Below
+# Tests Below
 
 You can use the [editor on GitHub](https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
