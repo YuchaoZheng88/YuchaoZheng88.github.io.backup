@@ -2,22 +2,27 @@
 ![Image of head](https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png?raw=true)
 
 # Projects
-  - DOS defence & analysis
-  - Web cralwer 
-  - VR drummer
+  - DosDefenceAnalysis
+  - WebCralwers
+  - DLL Injection
+  - VrDrummer
 
 # Learn from practice
-  - Web Goat
-  - Seed Lab
-  - Guided Hacking
+  - WebGoat
+  - SeedLab
+  - GuidedHacking
+  - HackTheBox (IppSec)
+  - KaliTools
 
 # Learn from documents
   - [Algorithms notes](Algorithms/0.md)
-  - System Design notes
-  - CEH notes
   - Languages
+  - SystemDesign
+  - InternetProtocols
+  - CEH notes
 
 # Hobby
   - Game Scenary
+  - StarCraft 2
 
 ###########################################################
