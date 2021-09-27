@@ -1,6 +1,6 @@
 # YUCHAO\`S BLOG
  
- `write some code` | <a href="http://example.com" target="_blank">music</a>
+ `write some code` | <a href="https://www.youtube.com/watch?v=QyzK21nx70o" target="_blank">music</a>
 ------------ | -------------
 ![](https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png?raw=true) | Welcome to Yuchao\`s blog.   `Have a nice day! Dude.`
 
