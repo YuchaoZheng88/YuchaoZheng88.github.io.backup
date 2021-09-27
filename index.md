@@ -21,7 +21,7 @@
 
 ---
 # Learn from documents
-  1. [Algorithms notes](Algorithms/0.md)
+  1. Algorithms notes ['U+1F600'](Algorithms/0.md)
   1. Languages
   1. SystemDesign
   1. InternetProtocols
