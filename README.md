@@ -1,5 +1,5 @@
 ## Welcome to GitHub Pages
-![Image](https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png?raw=true)
+![Image](https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png?raw=true | width=100)
 
 ## asdf
 asasdf
