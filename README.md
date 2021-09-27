@@ -7,11 +7,6 @@ You can use the [editor on GitHub](https://github.com/YuchaoZheng88/YuchaoZheng8
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-:grinning:	
-:cowboy_hat_face:	
-
-http://www.github.com/
-
 *This text will be italic*
 _This will also be italic_
 
