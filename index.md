@@ -21,11 +21,11 @@
 
 ---
 # Theory
-  1. Algorithms notes [`click`](Algorithms/0.md)
+  1. Algorithms [`click`](Algorithms/0.md)
   1. Languages
   1. SystemDesign
   1. InternetProtocols
-  1. CEH notes
+  1. CEH
 
 ---
 # Hobby
