@@ -1,12 +1,6 @@
 # Welcome to Yuchao\`s blog
 ![Image of head](https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png?raw=true)
 
-```cpp
-int main(){
-  print("abc");
-}
-```
-
 # Notes
   - [Algorithms notes](Algorithms/0.md)
   - System Design notes
@@ -46,7 +40,28 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Markdown
 
+```cpp
+int main(){
+  print("abc");
+}
+```
 
+# Ruby Example
+
+```ruby
+x = 5 + 6
+puts "Hello World! #{x}"
+```
+
+# C Example
+
+```c
+int main() {
+  int y = SOME_MACRO_REFERENCE;
+  int x = 5 + 6;
+  cout << "Hello World! " << x << std::endl();
+}
+```
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
