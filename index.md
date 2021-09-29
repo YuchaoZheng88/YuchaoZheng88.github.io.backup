@@ -21,8 +21,8 @@
 
 ---
 # Theory
-  1. Algorithms [`click`](Algorithms/0.md)
-  1. Languages [`click`](Languages/0.md)
+  1. Algorithms(Leetcode) [`click`](Algorithms/0.md)
+  1. Languages(Datastructure) [`click`](Languages/0.md)
   1. SystemDesign
   1. InternetProtocols
   1. CEH
