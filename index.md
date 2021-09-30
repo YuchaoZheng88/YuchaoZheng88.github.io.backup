@@ -1,8 +1,8 @@
-# YUCHAO`s blog
+# YUCHAO is coding
  
  `coding music       ☛` | <a href="https://www.bilibili.com/video/BV14h41167Y8" target="_blank">🎷🎸🎺🎻</a>
 ------------ | -------------
-![](https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png?raw=true) | Welcome to my blog.   `Have a nice day!`
+![](https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/head.png?raw=true) | Welcome!   `Have a nice day!`
 
 ---
 # Projects
