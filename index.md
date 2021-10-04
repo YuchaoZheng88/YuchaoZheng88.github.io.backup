@@ -25,7 +25,7 @@
   1. Languages(Datastructure) [`click`](Languages/0.md)
   1. SystemDesign
   1. InternetProtocols
-  1. CEH
+  1. CEH [click](CEH/0.md)
 
 ---
 # Hobby
