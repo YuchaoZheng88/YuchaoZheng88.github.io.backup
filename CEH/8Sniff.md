@@ -30,24 +30,26 @@
   > start flooding the CAM table with random MAC addresses.
   > send packets with ramdom MAC and IP, to all devices in the local network.
   
-## DHCP starvation
-  > DHCP requests all available IP addresses.
+### DHCP starvation
+  > DHCP: automatically assign IP addresses.\
+  > send DHCP requests all available IP addresses.\
   > valid users cannot renew their IP addresses.
 
   **Yersinia**
   - can take advantage of weaknesses in different network protocols, such as DHCP
   
   ``` yersinia -I ```
-  - -I: Starts an interactive ncurses session.\
-  - press F2: select DHCP mode.\
-  - press X: list available attack opetions.\
-    - 0: sending RAW packet.\
-    - 1: sending DISCOVER packet.\
-    - 2: creating DHCP rogue server.\
+  - -I: Starts an interactive ncurses session.
+  - press F2: select DHCP mode.
+  - press X: list available attack opetions.
+    - 0: sending RAW packet.
+    - 1: sending DISCOVER packet.
+    - 2: creating DHCP rogue server.
     - 3: sending RELEASE packet.
   - press 1: start a DHCP starvation attack.
   - Yersinia starts sending DHCP packets to the network adapter and all active machines in the LAN.
   - packets` destinations are FF:FF:FF:FF:FF:FF, Broadcast
 
-## ARP Poisoning
+### ARP Poisoning
+  > ARP: find MAC addresses of a host from its IP addresses.\
   > 
