@@ -75,5 +75,21 @@
   > how to: split client-server connection into 2: client-attacker, attacker-server
   
   **Cain & Abel**
+  > attacker do
   - on windows
+  - MAC Address Scanner -> All tests
+  - ARP tab -> New ARP Poison Routing -> Select 2 hosts
+  - Configuration / Routes Packets. Start capturing ARP packets.
+  
+  > victim do
+  - on windows
+  - cmd: ``` ftp [another host IP] ```
+  - type username and password
+  - The information can be found by attacker.
+  
+  Ftp: realy on clear-text, does not use encryption.
+  
+### Spoof a MAC address
+  
+  
   - 
