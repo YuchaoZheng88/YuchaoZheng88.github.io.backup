@@ -30,7 +30,7 @@
 ---
 # Hobby
   1. Game Landscape
-  1. StarCraft 2
+  1. StarCraft 2 [`click`](Hobby/sc2.md)
 
 ---
 [t](Tests/0.md)
