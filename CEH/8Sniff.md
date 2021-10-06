@@ -52,4 +52,27 @@
 
 ### ARP Poisoning
   > ARP: find MAC addresses of a host from its IP addresses.\
-  > 
+  > when succeed: change IP of the attacker to the target.\
+  > MITM attack.
+
+  **arpspoof**
+  
+  ``` arpspoof -i eth0 -t 10.10.10.1 10.10.10.10 ```
+  - 10.10.10.10 is IP address of the target system 10.10.10.1 is IP address of the access point or gateway.
+  - tell 10.1 the gateway, I am 10.10
+  - -i: specifies network interface.
+  - -t: specifies target IP address.
+  
+  ``` arpspoof -i eth0 -t 10.10.10.10 10.10.10.1 ```
+  - tell 10.10, I am gateway 10.1
+
+  result
+  - Wireshark will alert "duplicate use of 10.10.10.10 detected!"
+  - on victim machine, you can see MAC address of IP(gateway, 10.1) and attacker are the same.
+  
+### MITM attack
+  > prevention: HTTPS, VPN, SSH
+  > how to: split client-server connection into 2: client-attacker, attacker-server
+  
+  **Cain & Abel**
+  - 
