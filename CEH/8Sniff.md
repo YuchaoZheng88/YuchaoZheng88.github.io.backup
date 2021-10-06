@@ -106,5 +106,18 @@
   - captures live network traffic from 
     - Ethernet, IEEE 802.11, PPP/HDLC, 
     - ATM, Bluetooth, USB, Token Ring, 
-    - Frame Relay, and FDDI networks. 
-   
+    - Frame Relay, and FDDI networks.
+     
+  ``` http.request.method == POST ```
+  > filter POST requests\
+  > then, In String, Find "pwd".\
+  > In real-time, when attackers gain the credentials of a victim’s machine, they attempt to capture its remote interface and monitor the traffic
+
+  remote infterface of wireshark
+  - https://documentation.help/Wireshark/ChCapInterfaceRemoteSection.html
+
+  **Omnipeek Network Protocol Analyzer**
+  
+  **SteelCentral Packet Analyzer**
+  
+  
