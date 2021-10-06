@@ -96,3 +96,15 @@
   
   **SMAC**
   > another MAC address changer
+
+## 2. Sniff using various tools
+  
+  **Wireshark**
+  - [website](https://www.wireshark.org/)
+  - uses [libpcap](http://www.tcpdump.org/)
+  - winpcap on windows
+  - captures live network traffic from 
+    - Ethernet, IEEE 802.11, PPP/HDLC, 
+    - ATM, Bluetooth, USB, Token Ring, 
+    - Frame Relay, and FDDI networks. 
+   
