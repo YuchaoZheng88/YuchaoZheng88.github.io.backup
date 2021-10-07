@@ -119,5 +119,21 @@
   **Omnipeek Network Protocol Analyzer**
   
   **SteelCentral Packet Analyzer**
+  - can analyze multi-gigabyte recordings.
+  - [download](https://www.riverbed.com/au/forms/trial-downloads/appresponse11-trial.html)
+  - Bandwidth Over Time
+
+## 3. Detect Network Sniffing
+
+### Detect ARP Poisoning
+  **Xarp**
+  - It detects critical network attacks that firewalls cannot cover.
+
+### Detect promiscuous Mode
+  using **Nmap** Scripting Engine(NSE)
+  - ```  nmap --script=sniffer-detect [Target IP Address/ IP Address Range] ```
+  - The result is "Likely in promiscuous mode"
   
+  using **NetScanTools Pro**
+  - In Promiscuous Mode Scanner, set taget IP/range.
   
