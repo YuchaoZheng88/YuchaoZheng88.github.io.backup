@@ -17,7 +17,7 @@
   1. SeedLab
   1. GuidedHacking
   1. HackTheBox (IppSec)
-  1. KaliTools
+  1. Tools [`click`](tools/0.md)
 
 ---
 # Theory
