@@ -26,6 +26,7 @@
   1. SystemDesign
   1. InternetProtocols
   1. CEH [`click`](CEH/0.md)
+  1. Data mining [`click`](DM/0.md)
 
 ---
 # Hobby
