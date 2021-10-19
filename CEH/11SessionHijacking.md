@@ -67,4 +67,13 @@ This module spoofs the IP address of the target host.
 This module will only consider the packets sent with a payload matching the given regular expression
 
 ## Detect
+  ### Methods:
+  - Manual: Wireshark or other packet analyzer
+  - Automatic: IDS, IPS.
+  
+  ### Wireshark
+  - supported by WinPcap
+  - traffic from Ethernet, IEEE 802.11, PPP/HDLC, ATM, Bluetooth, USB, Token Ring, Frame Relay, and FDDI networks
+
+
   
