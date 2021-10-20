@@ -1,6 +1,6 @@
 # Module 12: Evading IDS, Firewalls, and Honeypots
 
-## Perform Intrusion Detection
+## 1. Perform Intrusion Detection
 
 ### Snort
   Should configure snort once.
@@ -50,6 +50,19 @@
   
 ### ZoneAlarm FREE FIREWALL 2019
   
+  The Add Zone window appears; choose the following:
+  - Zone: Blocked
+  - Hostname: www.moviescope.com
+  - Description: Block This Site
+  - Click Lookup; by doing this, we are blocking unwanted sites from browsing
   
+  Other firewalls:
+  - ManageEngine Firewall Analyzer (https://www.manageengine.com), 
+  - pfSense (https://www.pfsense.org), 
+  - Sophos XG Firewall (https://www.sophos.com), and 
+  - Comodo Firewall (https://personalfirewall.comodo.com) 
   
-  
+### HoneyBOT
+  if you want HoneyBOT to send you email alerts, check Send Email Alerts.\
+
+## 2. Evade Firewalls using Various Evasion Techniques
