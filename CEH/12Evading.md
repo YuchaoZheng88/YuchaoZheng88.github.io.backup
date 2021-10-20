@@ -18,7 +18,7 @@
   ``` snort -dev -i 1 ```\
   enable Ethernet driver, start packet dump mode
   
-  Snort.conf
+  #### Snort.conf
   - Step #1: Set the network variables
   - HOME_NET (my IP)
   - EXTERNAL_NET any
@@ -31,4 +31,17 @@
   - dynamicpreprocessor directory
   - Step #5: Configure preprocessors
   - Step #6: Configure output plugins
-  - 
+  
+  #### icmp-info.rules (in \Snort\rules)
+  ``` alert icmp $EXTERNAL_NET any -> $HOME_NET 10.10.10.19 (msg:"ICMP-INFO PING"; icode:0; itype:8; reference:arachnids,135; reference:cve,1999-0265; classtype:bad-unknown; sid:472; rev:7;) ```\
+  Add to the last line.
+  
+  #### Start Snort
+  ``` snort -iX -A console -c C:\Snort\etc\snort.conf -l C:\Snort\log -K ascii ```\
+  replace X with your device index number; in this: X is 1.\
+  ``` snort -i1 -A console -c C:\Snort\etc\snort.conf -l C:\Snort\log -K ascii ```\
+  After initializing interface and logged signatures, Snort starts and waits for an attack and triggers alerts when attacks occur on the machine.
+  
+  
+  
+  
