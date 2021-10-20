@@ -42,6 +42,14 @@
   ``` snort -i1 -A console -c C:\Snort\etc\snort.conf -l C:\Snort\log -K ascii ```\
   After initializing interface and logged signatures, Snort starts and waits for an attack and triggers alerts when attacks occur on the machine.
   
+  #### attack and check whether snort detects or not
+  - ping the snort machine, can be detected as bad traffic
+  
+  #### check log
+  \Snort\log\[ip]\ICMP_ECHO.ids
+  
+### ZoneAlarm FREE FIREWALL 2019
+  
   
   
   
