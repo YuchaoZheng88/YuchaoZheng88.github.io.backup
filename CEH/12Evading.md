@@ -66,3 +66,35 @@
   if you want HoneyBOT to send you email alerts, check Send Email Alerts.\
 
 ## 2. Evade Firewalls using Various Evasion Techniques
+  firewall bypassing techniques:
+  - Port Scanning
+  - Firewalking
+  - Banner Grabbing
+  - IP Address Spoofing
+  - Source Routing
+  - Tiny Fragments
+  - Using an IP Address in Place of URL
+  - Using Anonymous Website Surfing Sites
+  - Using a Proxy Server
+  - ICMP Tunneling
+  - ACK Tunneling
+  - HTTP Tunneling
+  - SSH Tunneling
+  - DNS Tunneling
+  - Through External Systems
+  - Through MITM Attack
+  - Through Content
+  - Through XSS Attack
+ 
+ ### Nmap Evasion Techniques
+  1. On Windows: firewall block Parrot Linux ip incoming traffic.
+  1. On parrot linux: ``` nmap (target IP) ```, shows that all ports are filtered.
+  1. ``` nmap -sS (target IP)```, perform TCP SYN Port Scan, still all filtered.
+  1. ``` nmap -T4 -A (target IP) ```, INTENSE Scan, still filtered.\
+    T4: Aggressive (4) speeds scans
+    -A switch enables OS detection, version detection, script scanning, and traceroute.
+  1. ``` nmap -sI (zombie IP) (target IP) ``` **Zombie Scan**, can get open ports on target.
+  1. 
+  
+ 
+ 
