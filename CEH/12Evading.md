@@ -94,7 +94,14 @@
     T4: Aggressive (4) speeds scans
     -A switch enables OS detection, version detection, script scanning, and traceroute.
   1. ``` nmap -sI (zombie IP) (target IP) ``` **Zombie Scan**, can get open ports on target.
-  1. 
+ 
+### HTTP/FTP Tunneling
+  encapsulates data inside HTTP traffic (port 80)\
+  two modes:
+  - two modes: SSL/CONNECT mode.
+  - a remote host.
+
+  
   
  
  
