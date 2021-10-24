@@ -96,11 +96,19 @@
   1. ``` nmap -sI (zombie IP) (target IP) ``` **Zombie Scan**, can get open ports on target.
  
 ### HTTP/FTP Tunneling
-  encapsulates data inside HTTP traffic (port 80)\
+  encapsulates data inside HTTP traffic (port 80)
+  
   two modes:
-  - two modes: SSL/CONNECT mode.
+  - SSL/CONNECT mode.
   - a remote host.
+  
+ steps:
+ 1. HTTHost running on Windows Server 2016.
+ 2. Windows 2019 trun on firewall, block port 21, can not ftp 10.10.10.10
+ 3. Windows 2019 run HTTPort, Proxy`s host 2016.
+ 4. can not access the ftp site directly by issuing ftp 10.10.10.10, but able to access it ftp 127.0.0.1.
 
+  
   
   
  
