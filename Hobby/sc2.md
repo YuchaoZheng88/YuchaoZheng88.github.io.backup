@@ -7,3 +7,6 @@
 - share allies` resources information.
 - share allies` screen position.
 - I dont think I can debug sc2, maybe screen recogonization is ok.
+
+# 3. Object Detection by OpenCV
+ [tutorial](https://www.youtube.com/watch?v=vXqKniVe6P8)
