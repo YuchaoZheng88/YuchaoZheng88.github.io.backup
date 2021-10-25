@@ -39,4 +39,4 @@ Steps:
 3. if the attacker entered an **IP address**, they receive the banner information of the target machine.\
    if they enter the **URL of a website**, they receive the banner information of the respective web server that hosts the website.
 
-### 
+### WhatWeb
