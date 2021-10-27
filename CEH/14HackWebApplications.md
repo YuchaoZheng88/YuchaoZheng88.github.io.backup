@@ -8,7 +8,7 @@ Methods:
 - brute-force
 - parameter tampering
 
-## footprint
+## Footprint
 Tasks:
 - Server Discovery
 - Service Discovery
@@ -40,3 +40,56 @@ Steps:
    if they enter the **URL of a website**, they receive the banner information of the respective web server that hosts the website.
 
 ### WhatWeb
+Recognizes content management systems (CMS), blogging platforms, statistics and analytics packages, JavaScript libraries, web servers, and embedded devices.\
+Identifies version numbers, email addresses, account IDs, web framework modules, SQL errors
+
+``` whatweb [Target Web Application] ```\
+``` whatweb -v [Target Web Application] ```\
+``` whatweb --log-verbose=[report name] [Target Web Application] ```\
+write output to a text file
+
+### OWASP ZAP
+- Click "Automated Scan"
+- Input "URL to attack"
+- Result in "Alerts" tab
+
+### Detect Load Balancer
+2 types:
+- Layer 4, DNS
+- Layer 7, HTTP
+
+``` dig [domain name] ```\
+multiple IP addresses, possibly a load balancer.
+
+``` lbd [domain name] ``` lbd (load balancing detector)\
+detects if a given domain uses DNS and http load balancing via the Server: and Date: headers and the differences between server answers. It analyzes the data received from application responses to detect load balancers.
+
+### Identify Web Server Directories
+``` nmap -sV --script=http-enum [target domain or IP address] ```\
+``` gobuster dir -u [Target Website] -w [worldlist path] ```\
+  dir: uses directory or file brute-forcing mode
+
+### Vulnerability Scan by Vega
+Other tools:
+- WPScan Vulnerability Database (https://wpscan.com), 
+- Arachni (https://www.arachni-scanner.com), 
+- appspider (https://www.rapid7.com), or 
+- Uniscan (https://sourceforge.net) 
+
+### Identify Clickjacking
+  iframe
+  
+## Perform Web Application Attack
+
+### Brute-force by Brup Suite
+  Brup Suite: intercepting proxy, application-aware spider, advanced web application scanner, intruder tool, repeater tool, and sequencer tool.
+  
+  1. "Intruder" tab.
+  2. Attack type choose "Cluster bomb".
+  3. "Payloads" tab, set payload set and type, load wrodlists.
+  4. click "start attack".
+
+### Parameter Tampering by Brup Suite
+
+
+  
