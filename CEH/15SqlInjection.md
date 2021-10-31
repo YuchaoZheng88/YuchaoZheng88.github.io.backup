@@ -42,3 +42,26 @@ Types:
 
 ## Detect SQL Injection Vulnerabilities
 
+By monitoring HTTP traffic, SQL injection attack vectors, and determining if a web application or database code contains SQL injection vulnerabilities.
+
+### Damn Small SQLi Scanner (DSSS)
+
+``` cd DSSS ```
+
+``` python3 dsss.py ```
+
+``` python3 dsss.py -u "http://www.moviescope.com/viewprofile.aspx?id=1" --cookie="[cookie copied]" ```
+- -u specifies the target URL. 
+- --cookie specifies the HTTP cookie header value.
+- then shows that the target website is vulnerable to blind SQL injection attacks.
+
+### OWASP ZAP
+
+Quick Start -> Automated Scan -> URL to attack -> Attack -> "Alerts" -> SQL Injection
+
+### Other tools
+- Acunetix Web Vulnerability Scanner (https://www.acunetix.com)
+- Snort (https://snort.org)
+- Burp Suite (https://www.portswigger.net)
+- w3af (http://w3af.org) 
+- Netsparker Web Application Security Scanner (https://www.netsparker.com)
