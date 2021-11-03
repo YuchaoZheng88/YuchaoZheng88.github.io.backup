@@ -33,4 +33,23 @@ Types:
 - Evil twin
 - Wi-Jacking attack
 
-### Aircrack-ng
+###  Crack a WEP network using Aircrack-ng
+
+``` aircrack-ng `[captured file path]` ```
+
+### Crack a WPA2 Network using Aircrack-ng
+
+WPA2 is an upgrade to WPA\
+Cipher Block Chaining Message Authentication Code Protocol (CCMP)
+
+``` aircrack-ng -a2 -b [Target BSSID] -w [word list path] '[captured file path]' ```
+- -a is the technique used to crack the handshake, 2=WPA technique.
+- -b refers to bssid; replace with the BSSID of the target router.
+- -w stands for wordlist; provide the path to a wordlist.
+
+## Other crack tools
+- Elcomsoft Wireless Security Auditor (https://www.elcomsoft.com)
+- Portable Penetrator (https://www.secpoint.com)
+- WepCrackGui (https://sourceforge.net)
+- Pyrit (https://github.com)
+- WepAttack (http://wepattack.sourceforge.net)
