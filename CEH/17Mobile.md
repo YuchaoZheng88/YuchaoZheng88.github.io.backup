@@ -55,7 +55,7 @@ Android has a stack of software components categorized into six sections:
   9. ``` [18] Show Mac/Inet ```
   10. ``` [21] NetStat  ```
 
-### Other tools
+### online Android analyzers
   - NetCut (http://www.arcai.com), 
   - drozer (https://labs.f-secure.com), 
   - zANTI (https://www.zimperium.com), 
@@ -63,3 +63,43 @@ Android has a stack of software components categorized into six sections:
   - DroidSheep (https://droidsheep.info)
 
 ## Secure
+
+### Sixo Online APK Analyzer
+  
+  https://www.sisik.eu/apk-tool
+  
+  Requested Permissions section
+  -  Some permissions are granted by the user when installing the app and some need to be confirmed later while the app is running.
+  -  declared in the app’s AndroidManifest.xml file
+  -  AndroidManifest.xml contains the app’s package name, version information, declarations of app components, requested permissions...
+
+### other tools
+- SandDroid (http://sanddroid.xjtu.edu.cn)
+- Apktool (http://www.javadecompilers.com)
+- Apprisk Scanner (https://apprisk.newskysecurity.com)
+
+### Analyze a Malicious App using Quixxi Vulnerability Scanner
+
+  https://vulnerabilitytest.quixxi.com/#/
+  
+  Get a Vulnerability Scan Report:
+  - Permissions Used
+  - CERTIFICATION INFORMATION
+  - Issue, Severity, Assessment Status, CWE, Exploits
+  
+  Android vulnerability scanners:
+  - X-Ray (https://duo.com)
+  - Vulners Scanner (https://play.google.com)
+  - Shellshock Vulnerability Scan (https://play.google.com)
+  - Yaazhini (https://www.vegabird.com)
+  - Quick Android Review Kit (QARK) (https://github.com) 
+  
+## Secure Android Devices from Malicious Apps using Malwarebytes Security
+
+  **Malwarebytes** app
+  
+  ### other mobile antivirus and anti-spyware tools:
+  - AntiSpy Mobile (https://antispymobile.com)
+  - Spyware Detector - Anti Spy Privacy Scanner (https://play.google.com)
+  - iAmNotified - Anti Spy System (https://iamnotified.com)
+  - Privacy Scanner (AntiSpy) Free (https://play.google.com)
