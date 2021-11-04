@@ -33,3 +33,18 @@
 
 ## Capture and Analyze IoT Device Traffic
 
+### Wireshark
+
+1. ``` sudo snap install mqtt-explorer ```
+2. **MQTT Explorer** is a comprehensive MQTT client that provides a structured overview of your MQTT topics and simplifies working with devices/services on your broker. [link](https://github.com/thomasnordquist/MQTT-Explorer)
+3. Host: "mqtt.eclipseprojects.io", Port: 1883. CONNECT.
+4. In wireshark, "Apply a display filter" -> "mqtt"
+5. Select "Connect Ack" packet.
+6. The broker sends the Connect Ack packet on receiving a Connect command request from the client.
+7. see its: **Transmission Control Protocol**, **MQ Telemetry Transport Protocol**, and **Header Flags** 
+8. Select "Subscribe Ack" packet.
+9. To receive a relevant message, a client sends a SUBSCRIBE message to an MQTT broker. 
+10. The MQTT broker confirms subscription by sending an acknowledgment back to the client using a SUBACK message.
+11. After establishing a successful connection with the MQTT broker, the MQTT client can publish messages.
+12. A Publish Release (PUBREL) packet is the response to a Publish Received (PUBREC) packet.
+13. The Publish Complete (PUBCOMP) packet is the response to a Publish Release (PUBREL) packet.
