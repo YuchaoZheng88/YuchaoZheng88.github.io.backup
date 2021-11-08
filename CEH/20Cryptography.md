@@ -108,3 +108,20 @@
   - Seqrite Encryption Manager (https://www.seqrite.com), 
   - FileVault (https://support.apple.com), and 
   - Gillsoft Full Disk Encryption (http://www.gilisoft.com)
+
+## Perform Cryptanalysis using Various Cryptanalysis Tools
+
+  methods:
+  - **Linear** Cryptanalysis: A known plaintext attack that uses a linear approximation to describe the behavior of the block cipher
+  - **Differential** Cryptanalysis: The examination of differences in an input and how this affects the resultant difference in the output
+  - **Integral** Cryptanalysis: This attack is useful against block ciphers based on substitution-permutation networks and is an extension of differential cryptanalysis
+
+  ### Perform Cryptanalysis using CrypTool
+  
+  ### Perform Cryptanalysis using AlphaPeeler
+
+  ### Other tools:
+  - Cryptosense (https://cryptosense.com)
+  - RsaCtfTool (https://github.com) 
+  - Msieve (https://sourceforge.net) 
+  - Cryptol (https://cryptol.net) 
