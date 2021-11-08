@@ -24,8 +24,20 @@
 
 ### Calculate MD5 Hashes using HashMyFiles
 
+### Other tools
+  - MD6 Hash Generator (https://www.browserling.com), 
+  - All Hash Generator (https://www.browserling.com), 
+  - MD6 Hash Generator (https://convert-tool.com), and 
+  - md5 hash calculator (https://onlinehashtools.com) 
 
+## Perform File and Text Message Encryption using CryptoForge
+  protect the privacy of sensitive files, folders, or email messages by encrypting.\
+  Once the information has been encrypted, it can be stored on insecure media or transmitted on an insecure network.
   
+  https://www.cryptoforge.com/
   
+  encrypt to a .cfd file
+  
+
   
   
