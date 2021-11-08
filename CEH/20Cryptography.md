@@ -93,4 +93,18 @@
   
   uses a microchip that is called a **Trusted Platform Module (TPM)** to provide enhanced protection for your data and to preserve early boot-component integrity. 
   
+  1. encrypt a driver, like D:
+  2. reboot computer
+  3. input password to unlock the disk
+  4. The disk will remain unlocked until the next time you restart the system.
+
+### Perform Disk Encryption using Rohos Disk Encryption
   
+  1. click Create new disk
+  2. This drive appears only when you are connected to Rohos Disk Encryption, and disappears when you exit.
+
+### Disk Encryption Other tools:
+  - FinalCrypt (http://www.finalcrypt.org), 
+  - Seqrite Encryption Manager (https://www.seqrite.com), 
+  - FileVault (https://support.apple.com), and 
+  - Gillsoft Full Disk Encryption (http://www.gilisoft.com)
