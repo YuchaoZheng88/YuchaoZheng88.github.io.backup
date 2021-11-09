@@ -106,3 +106,66 @@ MegaPing, NetScanTools pro, Nmap, Hping3.
 2. -S: set SYN flag
 3. -V: verbose
 
+## Lab 3: Perform OS Discovery
+
+### Check TTL by wireshark
+
+| Operating System (OS) | Time To Live | TCP Window Size  |
+| ------------- |:-------------:| -----:|
+| Linux (Kernel 2.4 and 2.6) | 64 | 5840 |
+| Google Linux      | 64      |   5720 |
+| FreeBSD | 64      |    65535 |
+| OpenBSD | 64      |    16384 |
+| Windows 95 | 32      |    8192 |
+
+### Nmap Script Engine (NSE)
+
+``` nmap -A [Target IP Address] ```
+- -A: to perform an aggressive scan.
+- The scan takes aprroximately 10 minutes to complete.
+
+``` nmap -O [Target IP Address] ```
+- -O: performs the OS discovery.
+
+### unicornscan
+``` unicornscan [Target IP Address] -Iv ```
+- In this command, -I specifies an immediate mode and v specifies a verbose mode.
+
+## Lab 4: Scan beyond IDS and Firewall
+
+### Scan
+
+``` nmap -f [Target IP Address] ```
+- -f switch is used to split the IP packet into tiny fragment packets.
+- Packet fragmentation refers to the splitting of a probe packet into several smaller packets (fragments) while sending it to a network. When these packets reach a host, IDSs and firewalls behind the host generally queue all of them and process them one by one. However, since this method of processing involves greater CPU consumption as well as network resources, the configuration of most of IDSs makes it skip fragmented packets during port scans.
+
+``` nmap -g 80 [Target IP Address] ```
+- In this command, you can use the -g or --source-port option to perform source port manipulation.
+- Source port manipulation refers to manipulating actual port numbers with common port numbers to evade IDS/firewall: this is useful when the firewall is configured to allow packets from well-known ports like HTTP, DNS, FTP, etc.
+
+``` nmap -mtu 8 [Target IP Address] ```
+- In this command, -mtu: specifies the number of Maximum Transmission Unit (MTU) (here, 8 bytes of packets).
+- Using MTU, smaller packets are transmitted instead of sending one complete packet at a time. This technique evades the filtering and detection mechanism enabled in the target machine.
+
+``` nmap -D RND:10 [Target IP Address] ```
+- -D: performs a decoy scan.
+- RND: generates a random and non-reserved IP addresses.
+- The IP address decoy technique refers to generating or manually specifying IP addresses of the decoys to evade IDS/firewall. This technique makes it difficult for the IDS/firewall to determine which IP address was actually scanning the network and which IP addresses were decoys. By using this command, Nmap automatically generates a random number of decoys for the scan and randomly positions the real IP address between the decoy IP addresses.
+
+### Custom Packets by Colasoft Packet Builder
+
+### Custom UDP/TCP Packets by Hping3
+
+``` hping3 [Target IP Address] --udp --rand-source --data 500 ```
+- --udp specifies sending the UDP packets to the target host.
+- --rand-source enables the random source mode.
+- --data specifies the packet body size.
+
+``` hping3 -S [Target IP Address] -p 80 -c 5 ```
+- -S specifies the TCP SYN request on the target machine.
+- -p specifies assigning the port to send the traffic. dest port.
+- -c is the count of the packets sent to the target machine.
+
+``` hping3 [Target IP Address] --flood ```
+- --flood: performs the TCP flooding.
+
