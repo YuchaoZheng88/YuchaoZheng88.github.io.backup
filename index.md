@@ -27,25 +27,25 @@
 ---
 # Useful sites
 ## General
-[Guifre Ruiz](https://guif.re/),
-[Iptable tutorial](https://www.frozentux.net/iptables-tutorial/chunkyhtml/index.html),
-[Phrack Magazine](http://phrack.org/),
-[exploit education](https://exploit.education/),
-[Linux Device Drivers](https://lwn.net/Kernel/LDD3/),
-[Cyber wtf](https://cyber.wtf/),
-[the nmap book](https://nmap.org/book/toc.html),
+[Guifre Ruiz](https://guif.re/) ||| 
+[Iptable tutorial](https://www.frozentux.net/iptables-tutorial/chunkyhtml/index.html) ||| 
+[Phrack Magazine](http://phrack.org/) ||| 
+[exploit education](https://exploit.education/) ||| 
+[Linux Device Drivers](https://lwn.net/Kernel/LDD3/) ||| 
+[Cyber wtf](https://cyber.wtf/) ||| 
+[the nmap book](https://nmap.org/book/toc.html) ||| 
 
 ## Game Hacking
-[Guided Hacking](https://guidedhacking.com/threads/ghb0-game-hacking-bible-introduction.14450/),
-[Mul Game Hacking](https://www.mpgh.net/),
+[Guided Hacking](https://guidedhacking.com/threads/ghb0-game-hacking-bible-introduction.14450/) ||| 
+[Mul Game Hacking](https://www.mpgh.net/) ||| 
 
 ## Assembly
-[Learn assembly online](https://www.microcorruption.com/),
-[Crackmes](https://crackmes.one/)
+[Learn assembly online](https://www.microcorruption.com/) ||| 
+[Crackmes](https://crackmes.one/) ||| 
 
 ## OSCP preperation
-[John J Hacking](https://johnjhacking.com/blog/the-oscp-preperation-guide-2020/),
-[OSCP Journey](https://arvandy.com/),
+[John J Hacking](https://johnjhacking.com/blog/the-oscp-preperation-guide-2020/) ||| 
+[OSCP Journey](https://arvandy.com/) ||| 
 
 
 
