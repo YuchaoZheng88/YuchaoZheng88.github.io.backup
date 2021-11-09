@@ -169,3 +169,24 @@ MegaPing, NetScanTools pro, Nmap, Hping3.
 ``` hping3 [Target IP Address] --flood ```
 - --flood: performs the TCP flooding.
 
+### Custom Packets by Nmap
+
+``` nmap [Target IP Address] --data 0xdeadbeef ```
+- Nmap uses --data [hex string] (here, 0xdeadbeef) to send the binary data (o’s and 1’s) as payloads in the sent packets to scan beyond firewalls.
+
+``` nmap [Target IP Address] --data-string "Ph34r my l33t skills" ```
+- Nmap uses --data-string [string] (here, “Ph34r my l33t skills”) to send a regular string as payloads in the sent packets to the target machine for scanning beyond the firewall.
+
+``` nmap --data-length 5 [Target IP Address] ```
+- Nmap uses --data-length [len] (here, 5) to append the number of random data bytes to most of the packets sent without any protocol-specific payloads.
+
+``` nmap --randomize-hosts [Target IP Address] ```
+- Nmap uses --randomize-hosts to scan the number of hosts in the target network in random order to scan the intended target that is beyond the firewall.
+
+``` nmap --badsum [Target IP Address] ```
+- send the packets with bad or bogus TCP/UPD checksums to the intended target to avoid certain firewall rulesets.
+
+## Other tools:
+- NetScanTools Pro (https://www.netscantools.com).
+- Ostinato (https://www.ostinato.org).
+- WAN Killer (https://www.solarwinds.com).
