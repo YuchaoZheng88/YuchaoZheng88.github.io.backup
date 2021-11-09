@@ -25,7 +25,15 @@
 [Sushant 747 OSCP Guide](https://sushant747.gitbooks.io/total-oscp-guide/content/the_basics.html) ||| 
 [Rowbot Pentest Notes](https://guide.offsecnewbie.com/) ||| 
 [Hack the box for OSCP](https://forum.hackthebox.com/t/oscp-practice/531) ||| 
+
+## General
 [Guifre Ruiz](https://guif.re/) ||| 
+[Iptable tutorial](https://www.frozentux.net/iptables-tutorial/chunkyhtml/index.html) ||| 
+[Phrack Magazine](http://phrack.org/) ||| 
+[exploit education](https://exploit.education/) ||| 
+[Linux Device Drivers](https://lwn.net/Kernel/LDD3/) ||| 
+[Cyber wtf](https://cyber.wtf/) ||| 
+[the nmap book](https://nmap.org/book/toc.html) ||| 
 
 ## CTF practice
 [wargame](https://overthewire.org/wargames/) ||| 
@@ -40,14 +48,6 @@
 ## Assembly
 [Learn assembly online](https://www.microcorruption.com/) ||| 
 [Crackmes](https://crackmes.one/) ||| 
-
-## General
-[Iptable tutorial](https://www.frozentux.net/iptables-tutorial/chunkyhtml/index.html) ||| 
-[Phrack Magazine](http://phrack.org/) ||| 
-[exploit education](https://exploit.education/) ||| 
-[Linux Device Drivers](https://lwn.net/Kernel/LDD3/) ||| 
-[Cyber wtf](https://cyber.wtf/) ||| 
-[the nmap book](https://nmap.org/book/toc.html) ||| 
 
 ## Game Hacking
 [Guided Hacking](https://guidedhacking.com/threads/ghb0-game-hacking-bible-introduction.14450/) ||| 
