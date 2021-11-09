@@ -9,21 +9,13 @@
   1. DosDefenceAnalysis [`click`](DosAnalysis/0.md)
   1. WebCralwers
   1. DLL Injection
-  
----
-# Practice
-  1. WebGoat [`click`](Practice/WebGoat/0.md)
-  1. SeedLab
-  1. HackTheBox (IppSec)
-  1. Tools [`click`](tools/0.md)
 
 ---
 # Theory
-  1. Algorithms(Leetcode) [`click`](Algorithms/0.md)
-  1. Languages(Datastructure) [`click`](Languages/0.md)
   1. CEH [`click`](CEH/0.md)
-  1. Data mining [`click`](DM/0.md)
-
+  2. Algorithms(Leetcode) [`click`](Algorithms/0.md)
+  3. Languages(Datastructure) [`click`](Languages/0.md)
+  
 ---
 # Useful sites
 ## General
@@ -47,6 +39,13 @@
 [John J Hacking](https://johnjhacking.com/blog/the-oscp-preperation-guide-2020/) ||| 
 [OSCP Journey](https://arvandy.com/) ||| 
 
+---
+
+# Practice
+  1. WebGoat [`click`](Practice/WebGoat/0.md)
+  1. SeedLab
+  1. HackTheBox (IppSec)
+  1. Tools [`click`](tools/0.md)
 
 
 ---
