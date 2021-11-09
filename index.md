@@ -12,7 +12,7 @@
 
 ---
 # Theory
-  1. CEH [`click`](CEH/0.md)
+  1. Certified Ethical Hacker [`click`](CEH/0.md)
   2. Algorithms(Leetcode) [`click`](Algorithms/0.md)
   3. Languages(Datastructure) [`click`](Languages/0.md)
   
