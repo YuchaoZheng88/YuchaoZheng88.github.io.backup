@@ -47,6 +47,8 @@ sends different probe packets of different IP protocols to the target host.
 
 MegaPing, NetScanTools pro, Nmap, Hping3.
 
+### nmap commands
+
 ``` nmap -sT -v [Target IP Address] ```
 1. -sT: 
 - performs the TCP connect/full open scan. 
@@ -71,4 +73,36 @@ MegaPing, NetScanTools pro, Nmap, Hping3.
 2. The ACK flag probe scan sends an ACK probe packet with a random sequence number; no response implies that the port is filtered (stateful firewall is present), and an RST response means that the port is not filtered.
 
 ``` nmap -sU -v [Target IP Address] ```
--sU: perform UDP scan.
+1. -sU: perform UDP scan.
+
+``` nmap -A [Target Subnet] ```
+1. -A: enables aggressive scan. 
+2. The aggressive scan option supports OS detection (-O), version scanning (-sV), script scanning (-sC), and traceroute (--traceroute). You should not use -A against target networks without permission.
+
+
+### nmap Profile Editor：
+- It is common with Nmap to want to run the same scan repeatedly. 
+- On Zenmap, UI editor.
+
+### hping
+
+``` hping3 -A [Target IP Address] -p 80 -c 5 ```
+- -A: ACK flag.
+- -p: port number.
+- -c: packet count.
+- The ACK scan sends an ACK probe packet to the target host; no response means that the port is filtered. If an RST response returns, this means that the port is closed.
+
+``` hping3 -8 0-100 -S [Target IP Address] -V ```
+1. -8: scan mode.
+- Mode
+- default mode     TCP
+- -0  --rawip      RAW IP mode
+- -1  --icmp       ICMP mode
+- -2  --udp        UDP mode
+- -8  --scan       SCAN mode.
+- Example: hping --scan 1-30,70-90 -S www.target.host
+- -9  --listen     listen mode
+- - 0-100: port numbers to scan
+2. -S: set SYN flag
+3. -V: verbose
+
