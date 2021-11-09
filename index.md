@@ -18,8 +18,30 @@
   
 ---
 # Useful sites
-## General
+
+## OSCP preperation
+[John J Hacking](https://johnjhacking.com/blog/the-oscp-preperation-guide-2020/) ||| 
+[OSCP Journey](https://arvandy.com/) ||| 
+[Sushant 747 OSCP Guide](https://sushant747.gitbooks.io/total-oscp-guide/content/the_basics.html) ||| 
+[Rowbot Pentest Notes](https://guide.offsecnewbie.com/) ||| 
+[Hack the box for OSCP](https://forum.hackthebox.com/t/oscp-practice/531) ||| 
 [Guifre Ruiz](https://guif.re/) ||| 
+
+## CTF practice
+[wargame](https://overthewire.org/wargames/) ||| 
+[vulnhub](https://www.vulnhub.com/) ||| 
+[hackthebox](https://www.hackthebox.eu/) ||| 
+[youtube walkthrough](https://www.youtube.com/watch?v=Lqehvpe_djs&list=PLidcsTyj9JXKPJk1X3eKquMfXShMzpOfI) ||| 
+
+## Linux
+[linux journey](https://linuxjourney.com/) ||| 
+[cmd challenge](https://cmdchallenge.com/) ||| 
+
+## Assembly
+[Learn assembly online](https://www.microcorruption.com/) ||| 
+[Crackmes](https://crackmes.one/) ||| 
+
+## General
 [Iptable tutorial](https://www.frozentux.net/iptables-tutorial/chunkyhtml/index.html) ||| 
 [Phrack Magazine](http://phrack.org/) ||| 
 [exploit education](https://exploit.education/) ||| 
@@ -30,14 +52,6 @@
 ## Game Hacking
 [Guided Hacking](https://guidedhacking.com/threads/ghb0-game-hacking-bible-introduction.14450/) ||| 
 [Mul Game Hacking](https://www.mpgh.net/) ||| 
-
-## Assembly
-[Learn assembly online](https://www.microcorruption.com/) ||| 
-[Crackmes](https://crackmes.one/) ||| 
-
-## OSCP preperation
-[John J Hacking](https://johnjhacking.com/blog/the-oscp-preperation-guide-2020/) ||| 
-[OSCP Journey](https://arvandy.com/) ||| 
 
 ---
 
