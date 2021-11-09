@@ -15,8 +15,17 @@
   1. Certified Ethical Hacker [`click`](CEH/0.md)
   2. Algorithms(Leetcode) [`click`](Algorithms/0.md)
   3. Languages(Datastructure) [`click`](Languages/0.md)
-  
+
 ---
+
+# Practice
+  1. WebGoat [`click`](Practice/WebGoat/0.md)
+  1. SeedLab
+  1. HackTheBox (IppSec)
+  1. Tools [`click`](tools/0.md)
+
+---
+
 # Useful sites
 
 ## OSCP preperation
@@ -35,11 +44,15 @@
 [Cyber wtf](https://cyber.wtf/) ||| 
 [the nmap book](https://nmap.org/book/toc.html) ||| 
 
+## youtubes
+[conda](https://www.youtube.com/c/c0nd4/videos) ||| 
+[IPPsec hackthebox](https://www.youtube.com/watch?v=Lqehvpe_djs&list=PLidcsTyj9JXKPJk1X3eKquMfXShMzpOfI) ||| 
+
+
 ## CTF practice
 [wargame](https://overthewire.org/wargames/) ||| 
 [vulnhub](https://www.vulnhub.com/) ||| 
 [hackthebox](https://www.hackthebox.eu/) ||| 
-[youtube walkthrough](https://www.youtube.com/watch?v=Lqehvpe_djs&list=PLidcsTyj9JXKPJk1X3eKquMfXShMzpOfI) ||| 
 
 ## Linux
 [linux journey](https://linuxjourney.com/) ||| 
@@ -52,15 +65,6 @@
 ## Game Hacking
 [Guided Hacking](https://guidedhacking.com/threads/ghb0-game-hacking-bible-introduction.14450/) ||| 
 [Mul Game Hacking](https://www.mpgh.net/) ||| 
-
----
-
-# Practice
-  1. WebGoat [`click`](Practice/WebGoat/0.md)
-  1. SeedLab
-  1. HackTheBox (IppSec)
-  1. Tools [`click`](tools/0.md)
-
 
 ---
 # Hobby
