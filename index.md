@@ -9,13 +9,11 @@
   1. DosDefenceAnalysis [`click`](DosAnalysis/0.md)
   1. WebCralwers
   1. DLL Injection
-  1. VrDrummer
   
 ---
 # Practice
   1. WebGoat [`click`](Practice/WebGoat/0.md)
   1. SeedLab
-  1. GuidedHacking
   1. HackTheBox (IppSec)
   1. Tools [`click`](tools/0.md)
 
@@ -23,10 +21,23 @@
 # Theory
   1. Algorithms(Leetcode) [`click`](Algorithms/0.md)
   1. Languages(Datastructure) [`click`](Languages/0.md)
-  1. SystemDesign
-  1. InternetProtocols
   1. CEH [`click`](CEH/0.md)
   1. Data mining [`click`](DM/0.md)
+
+---
+# Useful sites
+[Guifre Ruiz](https://guif.re/),
+[Iptable tutorial](https://www.frozentux.net/iptables-tutorial/chunkyhtml/index.html),
+[Phrack Magazine](http://phrack.org/),
+[exploit education](https://exploit.education/),
+[Guided Hacking](https://guidedhacking.com/threads/ghb0-game-hacking-bible-introduction.14450/),
+[Linux Device Drivers](https://lwn.net/Kernel/LDD3/),
+
+# OSCP preperation
+[John J Hacking](https://johnjhacking.com/blog/the-oscp-preperation-guide-2020/),
+[OSCP Journey](https://arvandy.com/),
+
+
 
 ---
 # Hobby
