@@ -186,7 +186,82 @@ MegaPing, NetScanTools pro, Nmap, Hping3.
 ``` nmap --badsum [Target IP Address] ```
 - send the packets with bad or bogus TCP/UPD checksums to the intended target to avoid certain firewall rulesets.
 
-## Other tools:
+### Other tools:
 - NetScanTools Pro (https://www.netscantools.com).
 - Ostinato (https://www.ostinato.org).
 - WAN Killer (https://www.solarwinds.com).
+
+## Lab 5: Draw Network Diagrams
+
+- Network Topology Mapper
+- OpManager (https://www.manageengine.com), 
+- The Dude (https://mikrotik.com), 
+- NetSurveyor (http://nutsaboutnets.com), 
+- NetBrain (https://www.netbraintech.com), 
+- Spiceworks Network Mapping Tool (https://www.spiceworks.com)
+
+## Lab 6: Perform Network Scanning using Various Scanning Tools
+
+### Metasploit
+
+1. Connect to database
+
+```
+# service postgresql start
+# msfconsole 
+msf6 > db_status
+	(msg: postgersql selected, no connection)
+msf6 > exit
+# msfdb
+# service postgresql restart
+# msfconsole 
+msf6 > db_status
+	(msg: Connected to msf)
+```
+
+2. nmap scan
+
+``` msf6 > nmap -Pn -sS -A -oX Test 10.10.10.0/24 ```
+
+3. import db
+
+``` msf6 > db_import Test ```
+
+4. check database
+
+``` msf6 > hosts ```
+
+5. list service
+
+``` 
+msf6 > db_services
+(or msf6 > services)
+```
+
+6. list Metasploit port scan modules
+
+```
+msf6 > search portscan
+msf6 > use auxiliary/scanner/portscan/syn
+msf6 > info
+	set INTERFACE eth0
+	set PORTS 80
+	set RHOSTS 10.10.10.5-20
+	set THREADS 50
+msf6 > run
+```
+
+7. detect OS
+```
+msf6 > back
+msf6 > use auxiliary/scanner/smb/smb_version
+```
+- The Server Message Block (SMB) is a network protocol that enables users to communicate with remote computers and servers — to use their resources or share, open, and edit files. It’s also referred to as the server/client protocol, as the server has a resource that it can share with the client.
+
+8. detect ftp version
+
+``` msf6 >  use auxiliary/scanner/ftp/ftp_version ```
+
+9. export scanned information to CSV file
+
+``` msf6 > hosts -o Results.csv ```
