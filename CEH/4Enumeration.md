@@ -157,5 +157,57 @@ Using the DNSRecon tool, the attacker can enumerate general DNS records for a gi
 - SPF
 - TXT		Text record
 
+### Other tools
+- LDNS (https://www.nlnetlabs.nl) 
+- nsec3map (https://github.com)
+- nsec3walker (https://dnscurve.org)
+- DNSwalk (https://github.com) 
+
 ## RPC, SMB, FTP
+
+### Perform RPC and SMB Enumeration using NetScanTools Pro
+
+  NetScanTools Pro Demo, on Windows.
+  1. https://www.netscantools.com/download.html
+  2. RPC scan. 
+  - Open RPC port: 111 Open NFS port: 2049
+  3. SMB scan.
+
+### Perform RPC, SMB, and FTP Enumeration using Nmap
+
+  ``` nmap -p 21 [Target IP Address] ```
+  - FTP services
+
+  ``` nmap -T4 -A [Target IP Address] ```
+  - may find out port 445 open
+
+  ``` nmap -p [Target Port] -A [Target IP Address] ```
+  - -p specifies the port to be scanned
+  - -A specifies that the ACK flag is set
+
 ## Other
+
+### Global Network Inventory
+
+### Advanced IP Scanner
+
+### Enum4linux
+``` # enum4linux -h ```
+
+``` # enum4linux -u martin -p apple -n [Target IP Address] ```
+- -u user specifies the username to use
+- -p pass specifies the password
+- -n nmblookup
+- nmblookup — NetBIOS over TCP/IP client used to lookup NetBIOS names
+
+``` enum4linux -u martin -p apple -o [Target IP Address] ```
+- -o: obtain the OS information.
+
+``` num4linux -u martin -p apple -P [Target IP Address] ```
+- -P: enumerate password policy.
+
+``` enum4linux -u martin -p apple -G [Target IP Address] ```
+- -G: enumerate group policy.
+
+``` enum4linux -u martin -p apple -S [Target IP Address] ```
+- -S: share policy.
