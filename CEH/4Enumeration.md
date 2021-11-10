@@ -71,8 +71,91 @@
   - ways to connect to the remote machine
   - If the selected host is not secure enough, you may use these options to connect to the remote machines. You may also be able to perform activities such as sending a message and shutting down a computer remotely. These features are applicable only if the selected machine has a poor security configuration.
 
+  ### Other tools:
+  - Network Performance Monitor (https://www.solarwinds.com)
+  - OpUtils (https://www.manageengine.com)
+  - PRTG Network Monitor (https://www.paessler.com)
+  - Engineer’s Toolset (https://www.solarwinds.com)
+  - WhatsUp® Gold (https://www.ipswitch.com)	
+
 ## LDAP
+  LDAP (Lightweight Directory Access Protocol)
+  - A client starts an LDAP session by connecting to a DSA (Directory System Agent), typically on TCP port 389, and sends an operation request to the DSA, which then responds.
+  - BER (Basic Encoding Rules) is used to transmit information between the client and the server.
+  
+  ### Active Directory Explorer (AD Explorer)
+  
+  https://docs.microsoft.com/en-us/sysinternals/downloads/adexplorer
+  
+  ### Other tools:
+  - Softerra LDAP Administrator (https://www.ldapadministrator.com)
+  - LDAP Admin Tool (https://www.ldapsoft.com)
+  - LDAP Account Manager (https://www.ldap-account-manager.org)
+  - LDAP Search (https://securityxploded.com)
+  - JXplorer (http://www.jxplorer.org)
+
 ## NFS
+  NFS (Network File System) is a type of file system that enables computer users to access, view, store, and update files over a remote server. This remote data can be accessed by the client computer in the same way that it is accessed on the local system.
+  
+### RPCScan & SuperEnum
+  
+RPCScan communicates with RPC (remote procedure call) services and checks misconfigurations on NFS shares.
+
+``` python3 rpc-scan.py [Target IP address] --rpc ```
+
+SuperEnum
+```
+#cd SuperEnum
+# echo "[target IP]" >> Target.txt
+#./superenum
+```
+  
 ## DNS
+
+### Perform DNS Enumeration using Zone Transfer
+
+1. dig (Linux-based systems)
+ 
+dig type: a, any, mx, ns, soa, hinfo, axfr, txt, ...	
+
+``` dig ns [Target Domain] ```
+- ns returns name servers in the result
+
+``` 
+dig @[[NameServer]] [[Target Domain]] axfr 
+(dig ns1.bluehost.com www.certifiedhacker.com axfr)
+```
+- Can be used to test whether target DNS allows zone transfers or not.
+- **AXFR** retrieves zone information
+- DNS zone transfers using the AXFR protocol are the simplest mechanism to replicate DNS records across DNS servers.
+
+2. nslookup(Windows-based systems)
+
+```
+c:\Users\Admin>nslookup
+> set querytype=soa
+> [domain] (like, certifiedhacker.com)
+> ls -d ns1.bluehost.com
+```
+- set querytype=soa sets the query type to SOA (Start of Authority) record to retrieve administrative information about the DNS zone of the target domain certifiedhacker.com.
+- ls -d requests a zone transfer of the specified name server. The result appears, displaying that the DNS server refused the zone transfer.
+
+### Perform DNS Enumeration using DNSSEC Zone Walking
+
+``` dnsrecon -h ```
+``` dnsrecon -d www.certifiedhacker.com -z ```
+- -d specifies the target domain 
+- -z specifies that the DNSSEC zone walk be performed with standard enumeration
+- in result: The "A" stands for "address" and this is the most fundamental type of DNS record: it indicates the IP address of a given domain. 
+
+Using the DNSRecon tool, the attacker can enumerate general DNS records for a given domain (MX, SOA, NS, A, AAAA, SPF, and TXT). These DNS records contain digital signatures based on public-key cryptography to strengthen authentication in DNS.
+- MX		Mail exchange record
+- SOA		Start of [a zone of] authority record
+- NS			Name server record
+- A			Address record	
+- AAAA		IPv6 address record
+- SPF
+- TXT		Text record
+
 ## RPC, SMB, FTP
 ## Other
