@@ -102,9 +102,18 @@ Steps:
 5. Finding the application library with no memory protections
 6. And finally, gaining access to the target
 
-[buffer over flow](bof.md)
+[buffer over flow detail](bof.md)
 
 ## Privilege Escalation
+techniques:
+- named pipe impersonation.
+- misconfigured service exploitation.
+- pivoting.
+- relaying.
+
+### Escalate Privileges using Privilege Escalation Tools and Exploit Client-Side Vulnerabilities
+
+
 
 ## Maintain Access & Hide
 
