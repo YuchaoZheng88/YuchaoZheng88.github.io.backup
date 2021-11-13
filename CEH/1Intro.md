@@ -74,5 +74,28 @@ Tactics, Techniques, Procedures
 - Maintaining Access
 - Clearing Tracks
 
+## Defense in Depth
+1. Policies, Procedures and Awareness
+2. Physical
+3. Perimeter
+4. Internal Network
+5. Host
+6. Application
+7. Data
 
+## Machine Learning:
+1. Supervised:\
+  Supervised learning uses algorithms that input a set of labeled training data to attempt to learn the differences between the given labels. Supervised learning is further divided into two subcategories, namely, **classification** and **regression**.\
+  Classification includes completely divided classes. Its main task is to define the test sample to identify its class. Regression is used when data classes are not separated, such as when the data is continuous.
+  
+2. Unsupervised:\
+  Unsupervised learning makes use of algorithms that input unlabeled training data to attempt to deduce all the categories without guidance. Unsupervised learning is further divided into two subcategories, namely, **clustering** and **dimensionality reduction**. Clustering divides the data into clusters based on their similarities, regardless of class information. Dimensionality reduction is the process of reducing the dimensions (attributes) of data.
 
+## Laws and Standards
+- PCI DSS (Payment Card Industry Data Security Standard)
+- ISO/IEC 27001:2013
+- HIPAA, https://www.hhs.gov
+- Sarbanes Oxley Act (SOX), 
+- Digital Millennium Copyright Act (DMCA) & Federal Information Security Management Act (FISMA)
+- General Data Protection Regulation (GDPR)
+- Data Protection Act 2018 (DPA) UK
