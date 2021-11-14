@@ -49,4 +49,21 @@ analog modems, Digital Subscriber Lines (DSL), wireless data services, and Virtu
 (VPN) over a Frame Relay network. Which AAA protocol would you implement? RADIUS. 
 ```
 
+Cross-site request forgery (CFRS)
+- forces the user's browser to send an authenticated request to a server
 
+Cross Site Scripting (XSS).
+- inject client-side scripts into web pages viewed by other users.
+
+Session hijacking.
+- also known as cookie hijacking. the exploitation of a valid computer session—sometimes also called a session key—to gain unauthorized access to information or services in a computer system.
+
+server side request forgery. (SSRF)
+- web security vulnerability that allows an attacker to induce the server-side application to make HTTP requests to an arbitrary domain of the attacker's choosing.
+
+run Nessus in the background: ``` nessus & ```
+
+sql injection types:
+- [link](https://www.greycampus.com/opencampus/ethical-hacking/types-of-sql-injection)
+
+No 29
