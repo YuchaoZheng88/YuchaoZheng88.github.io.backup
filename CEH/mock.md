@@ -28,5 +28,25 @@ Conducting Idle Scanning using Hping2, some queries cause the IPID to increment 
 
 Wireshark only find SMTP traffic: ``` tcp.port eq 25 ```
 
-A Null Scan is a series of TCP packets that contain a sequence number of 0 and no set flags. If port is closed, response will be "RST".
+A Null Scan is a series of TCP packets that contain a sequence number of 0 and no set flags. If port is closed, response will be "RST". If open, will be no response.
+
+OWASP 2021 top3: 1. Broken Access Control. 2. Cryptographic Failures. 3. Injection.
+
+Computer Security Incident Response Team (CSIRT): provides Incident response services to any user, company, government agency, or organization in partnership with the Department of Homeland Security.
+
+SQL single-line comment: "--"
+
+AAA protocols: refers to Authentication, Authorization and Accounting. It is used to refer to a family of protocols that mediate network access.
+- RADIUS, Remote Authentication Dial-In User Service. Communication between any vendor AAA client and ACS server.
+- TACACS+, Terminal Access Controller Access Control System. 
+- Kerberos
+- Diameter.
+
+``` 
+NO.20 Supposed you are the Chief Network Engineer of a certain Telco. Your company is planning
+for a big business expansion and it requires that your network authenticate users connecting using
+analog modems, Digital Subscriber Lines (DSL), wireless data services, and Virtual Private Networks
+(VPN) over a Frame Relay network. Which AAA protocol would you implement? RADIUS. 
+```
+
 
