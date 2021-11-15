@@ -1,3 +1,9 @@
+https://vceguide.com/what-is-the-use-of-the-mysql_realescape_stringo-function-in-the-above-script/
+
+https://www.exam4training.com/what-command-in-wireshark-will-help-you-to-find-this-kind-of-traffic/
+
+---
+
 Kismet: a wireless network detector that is commonly found on Linux.[link](https://www.kismetwireless.net/)
 
 Code injection: inserts text into a data field that gets interpreted as code.
@@ -66,4 +72,23 @@ run Nessus in the background: ``` nessus & ```
 sql injection types:
 - [link](https://www.greycampus.com/opencampus/ethical-hacking/types-of-sql-injection)
 
-No 29
+some DOS:
+- Mac Flood: after success, attacker can sniff all packets in switched environment network.
+- Smurf Attack: ping hosts with spoofed IP of victim.
+- Tear drop: exploit TCP/IP fragmentation reassembly bug of the applications.
+- Fraggle Attack: Like smurf, but send UDP.
+
+dns SOA record can indicate how long "DNS poisoning" could last. 
+- refresh value: how often a name server should check it's primary server to see an update.
+
+dns mx: directs email to a mail server.
+
+dns ns: name servers, tell the Internet where to go to find out a domain's IP address
+
+Windows CMD, "NET USE": list all the shares to which the current user context has access
+
+"nc -l -u -p 5555 < /etc/passwd": grabs the /etc/passwd file when connected to UDP port 55555
+
+PPTP: encryption on Data Link Layer (Layer 2).
+
+no 39.
