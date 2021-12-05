@@ -23,4 +23,19 @@
 ## OSI Model
 - All People Seem To Need Data Processing (Initail remember)
 - Application, Presentation, Session, Transport, Network, Data link, Physical
-## Ethernet 
+## Ethernet
+ Traffic
+ - ||| Preamble(7) | SFD(1) | Destination MAC(6) | Source MAC(6) | Type(v4 or v6)(2) | Payload(46-1500)(layer 3 and higher) | FCS |||
+ - (how many bytes of this part) above number meaning
+ - MAC: 6 bytes = 48 bits, eg.  8c:2d:aa:4b:98:a7,  first 3 bytes: OUI, manufacturer, last 3 bytes: the serial number,
+ 
+ Half-duplex
+ - cannot send and receive simutaneously
+ - LAN hubs are half-duplex
+ - Switch can be configured as half-duple (usually when connect to one h-d device)
+ - When collision happens, all devices wait random, send again.
+
+Full-duplex
+- send and received the same time
+
+
