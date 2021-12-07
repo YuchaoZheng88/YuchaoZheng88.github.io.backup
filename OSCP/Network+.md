@@ -43,3 +43,11 @@ Full-duplex
 - Mac address table: ||| MAC Address: Output Interface |||
 - ARP: Address Resolution Protocol
 - ``` arp -a ``` show local ARP table
+
+## Broadcast Domain & Collision Domain
+- broadcast stops at a router
+- full-duplex switch to stop collision
+
+## Unicast, Broadcast, Multicast
+- broadcast is not used in IPv6, multicast instead
+- 
