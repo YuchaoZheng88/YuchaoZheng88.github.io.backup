@@ -38,4 +38,8 @@
 Full-duplex
 - send and received the same time
 
-
+## Switch
+- Spanning Tree Protocol, STP, prevent loop
+- Mac address table: ||| MAC Address: Output Interface |||
+- ARP: Address Resolution Protocol
+- ``` arp -a ``` show local ARP table
