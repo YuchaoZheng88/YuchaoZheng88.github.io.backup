@@ -24,8 +24,8 @@
 - All People Seem To Need Data Processing (Initail remember)
 - Application, Presentation, Session, Transport, Network, Data link, Physical
 ## Ethernet
- Traffic
- - ||| Preamble(7) | SFD(1) | Destination MAC(6) | Source MAC(6) | Type(v4 or v6)(2) | Payload(46-1500)(layer 3 and higher) | FCS |||
+ Ethernet frame (layer 2 PDU)
+ - |Preamble(7) | SFD(1) | Destination MAC(6) | Source MAC(6) | Type(v4 or v6)(2) | Payload(46-1500)(layer 3 and higher) | FCS |
  - (how many bytes of this part) above number meaning
  - MAC: 6 bytes = 48 bits, eg.  8c:2d:aa:4b:98:a7,  first 3 bytes: OUI, manufacturer, last 3 bytes: the serial number,
  
@@ -53,4 +53,17 @@ Full-duplex
 
 ## PDU
 - MTU: Maximum IP packet to transmit
-- 
+- | DLC Header (14) | IP Header (20) | TCP Header (20) | TCP Data (1460) | FCS (4) |
+- DLC Header: | Destination MAC(6) | Source MAC(6) | Type(v4 or v6)(2) |
+- a tunneled traffic concern: tunnel may be smaller than your local Ethernet segment
+- DF: Dont Fragment bit, in IP Header.
+- if ping with DF.  | IP header (20) | ICMP Header (8) | data (1500-20-8=1472) |
+- ``` ping -f -l 1472 8.8.8.8 ``` -f: not fragment. -l: length.
+
+## Network Segmentation
+- VLAN: One physical switch, seperate logically at layer 2.
+- VLAN can be applied on different switches.
+- A trunk can be used to connect different switches with many VLANs (max 4094), use only one cable.
+- VLAN frame is added to normal Ethernet frame.(12 bits, 4094 vlans, 0 and 4095 are reserved)
+
+## Spanning Tree Protocol
