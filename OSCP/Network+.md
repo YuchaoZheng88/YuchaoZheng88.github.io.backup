@@ -50,4 +50,7 @@ Full-duplex
 
 ## Unicast, Broadcast, Multicast
 - broadcast is not used in IPv6, multicast instead
+
+## PDU
+- MTU: Maximum IP packet to transmit
 - 
