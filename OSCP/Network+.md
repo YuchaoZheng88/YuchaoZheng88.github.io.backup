@@ -67,3 +67,6 @@ Full-duplex
 - VLAN frame is added to normal Ethernet frame.(12 bits, 4094 vlans, 0 and 4095 are reserved)
 
 ## Spanning Tree Protocol
+- connet 2 switches with two cables, will create a loop
+- IEEE standard 802.1D
+- 
