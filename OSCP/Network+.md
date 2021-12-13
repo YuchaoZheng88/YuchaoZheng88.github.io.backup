@@ -69,4 +69,6 @@ Full-duplex
 ## Spanning Tree Protocol
 - connet 2 switches with two cables, will create a loop
 - IEEE standard 802.1D
-- 
+- Rapid Spanning Tress Protocol: 802.1W
+
+## Switch Interface Properties
