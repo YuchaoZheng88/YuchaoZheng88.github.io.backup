@@ -63,7 +63,7 @@ Full-duplex
 ## Network Segmentation
 - VLAN: One physical switch, seperate logically at layer 2.
 - VLAN can be applied on different switches.
-- A trunk can be used to connect different switches with many VLANs (max 4094), use only one cable.
+- A trunk can be used to connect different switches with many VLANs (max 4094), use only one cable. (802.1Q)
 - VLAN frame is added to normal Ethernet frame.(12 bits, 4094 vlans, 0 and 4095 are reserved)
 
 ## Spanning Tree Protocol
@@ -72,3 +72,4 @@ Full-duplex
 - Rapid Spanning Tress Protocol: 802.1W
 
 ## Switch Interface Properties
+- 
