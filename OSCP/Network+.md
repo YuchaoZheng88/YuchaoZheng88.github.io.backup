@@ -72,4 +72,9 @@ Full-duplex
 - Rapid Spanning Tress Protocol: 802.1W
 
 ## Switch Interface Properties
+- speed and duplex
+- VLAN assignment
+- Tag: Trunk port will tag outgoing traffic, untag incoming traffic.
+- PoE: power on ethernet
+- Port mirroring: eg. copy of traffic to IDS, which connected with switch.
 - 
