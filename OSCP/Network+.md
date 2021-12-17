@@ -102,5 +102,27 @@ compression IPv6:
 - 2600:DDDD:1111:1::1
 
 ## configuring IPv6
-- dual-stack routing: configure v4 and v6 same time, address, netmask, routing table, dynamic routing protocols.
-- 
+- dual-stack routing: configure v4 and v6 same time, address, netmask, routing table, dynamic routing protocols specific for v4 or v6.
+
+when sometimes some device do not support v6 but others do.
+- 6to4 addressing: send v6 over v4 network. (IP protocol 41, Teredo, Miredo)
+- 4in6 tunneling: tunnel v4 traffic on v6 network. 
+
+NDP: Neighbor Discovery Protocol (replace v4 ARP)
+
+SLAAC: Stateless Address Autoconfiguration.
+- configure IP address without DHCP server.
+
+DAD: Duplicate Address Detection.
+
+Discover routers: 
+- RS(Router Solicitation), ff02::2, broadcast to	all routers.
+- RA(Router Advertisement), rounter send back its IP, also ff02::1 to all nodes.
+
+Discover Neighbor:
+- NS(Neighbor Solicitation), ask for a certain IPv6 address in network.
+- NA(Neighbor Advertisement), send back its MAC address.
+
+
+
+
