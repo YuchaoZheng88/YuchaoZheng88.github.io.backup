@@ -77,4 +77,7 @@ Full-duplex
 - Tag: Trunk port will tag outgoing traffic, untag incoming traffic.
 - PoE: power on ethernet
 - Port mirroring: eg. copy of traffic to IDS, which connected with switch.
-- 
+
+## Static and Dynamic routing
+- Static routing: Administrator define the routes.
+- Dynamic routing: Routers send routes to each other, almost real-time.
