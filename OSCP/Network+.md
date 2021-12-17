@@ -135,8 +135,17 @@ Qos: Quality of Service.
 
 ## NAT
 Network Address Translation.
+- RFC 1918 private IPv4 address. (class A, Bs, Cs)
+- Router translate the private IP to its external IP.
+- NAT Table: | PrivateIP:Private port | Public IP:Public port |
 
+Port forwarding:
+- Also called Static NAT or Destination NAT.
 
+## ACL
+- Allow or deny traffic.
+- also used for NAT, QoS, etc.
+- 
 
 
 
