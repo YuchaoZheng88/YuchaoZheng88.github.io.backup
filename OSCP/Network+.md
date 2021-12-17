@@ -123,6 +123,20 @@ Discover Neighbor:
 - NS(Neighbor Solicitation), ask for a certain IPv6 address in network.
 - NA(Neighbor Advertisement), send back its MAC address.
 
+## Prioritizing Traffic
+Packet shaping:
+- control bandwidth usage.
+- set important applications with higher priorities.
+
+Qos: Quality of Service.
+- Cos(Class of Service): OSI Layer2, Ethernet frame header.
+- DiffServ: OSI Layer3, in routers or firewalls.
+- DSCP(Differentiated Services Code Point): in IP header.
+
+## NAT
+Network Address Translation.
+
+
 
 
 
