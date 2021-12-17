@@ -80,4 +80,27 @@ Full-duplex
 
 ## Static and Dynamic routing
 - Static routing: Administrator define the routes.
-- Dynamic routing: Routers send routes to each other, almost real-time.
+- Dynamic routing: Routers send routes to each other, almost real-time. (dynamic routing protocol)
+- Default routing
+
+## IGP, EGP
+- AS: Autonomous System
+- <img width="450" alt="image" src="https://user-images.githubusercontent.com/91292763/146480977-2105f25d-b858-438f-afc0-59232bf2cb88.png">
+
+## Dynamic Routing Protocols
+- Distance-vector routing protocols.(count hop as distance, speed not account, good for small network)
+- Link-state routing protocols.(Consider speed, scalable, in large networks, like OSPF)
+- Hybird routing protocols. (like BGP)
+
+## IPv4, v6 address
+- IPv4: 32 bits = 4 bytes
+- IPv6: 128 bits = 16 bytes 
+
+compression IPv6:
+- 2600:DDDD:1111:0001:0000:0000:0000:0001
+- 2600:DDDD:1111: 1: 0: 0: 0: 1
+- 2600:DDDD:1111:1::1
+
+## configuring IPv6
+- dual-stack routing: configure v4 and v6 same time, address, netmask, routing table, dynamic routing protocols.
+- 
