@@ -155,3 +155,11 @@ Port forwarding:
 ## Binary Math
 
 ## Classful subnetting
+- class A: 1-127 (/8)
+- class B: 128-191 (/16)
+- class C: 192-255 (/24)
+
+## IPv6 Subnet masks
+- IANA give IPv6 to RIRs(RIPE europe 2A00: ; ARIN northAmerica 2600:)
+- RIR give subnet to ISPs.
+- ISP give /48 subnet to customers.
