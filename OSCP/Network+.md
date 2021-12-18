@@ -163,3 +163,5 @@ Port forwarding:
 - IANA give IPv6 to RIRs(RIPE europe 2A00: ; ARIN northAmerica 2600:)
 - RIR give subnet to ISPs.
 - ISP give /48 subnet to customers.
+
+
