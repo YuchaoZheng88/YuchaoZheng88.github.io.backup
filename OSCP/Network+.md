@@ -145,7 +145,12 @@ Port forwarding:
 ## ACL
 - Allow or deny traffic.
 - also used for NAT, QoS, etc.
-- 
+- default rule is deny.
 
+## Circuit Switching and Packet Switching
 
+## SDN
+- Software Defined Networking
+
+## Binary Math
 
