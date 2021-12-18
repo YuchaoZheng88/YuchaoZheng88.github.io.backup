@@ -178,6 +178,7 @@ Port forwarding:
 
 **Do not need a server to assign IP
 **MAC <--> EUI-64 (conversion)
+- EUI: extended unique identifier
 - <img width="573" alt="image" src="https://user-images.githubusercontent.com/91292763/146657452-917d3544-a8a6-4c35-a331-26944ffd9d22.png">
 
 
