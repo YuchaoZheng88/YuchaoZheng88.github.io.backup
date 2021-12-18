@@ -3,6 +3,7 @@
 ## intro
 - Ephemeral port, Non-ephemeral port.
 - TCP port 80, is not conflit with, UDP port 80, on same machine.
+
 ## common ports
 - Telnet: tcp/23, non-encrypted.
 - SSH: tcp/22, encrypted.
@@ -20,9 +21,11 @@
 - H.323: tcp/1720, voice over IP
 - SMB: tcp/445(NetBIOS-less)
 - LDAP: tcp/389. LDPS: tcp/636. 
+
 ## OSI Model
 - All People Seem To Need Data Processing (Initail remember)
 - Application, Presentation, Session, Transport, Network, Data link, Physical
+
 ## Ethernet
  Ethernet frame (layer 2 PDU)
  - |Preamble(7) | SFD(1) | Destination MAC(6) | Source MAC(6) | Type(v4 or v6)(2) | Payload(46-1500)(layer 3 and higher) | FCS |
@@ -169,12 +172,12 @@ Port forwarding:
 - APIPA
 
 ## Assign IPv6
-### Like DHCPv4
+**Like DHCPv4**
 - client(udp/546)
 - server(udp/547)
 
-### Do not need a server to assign IP
-MAC <--> EUI-64 (conversion)
+**Do not need a server to assign IP
+**MAC <--> EUI-64 (conversion)
 - <img width="573" alt="image" src="https://user-images.githubusercontent.com/91292763/146657452-917d3544-a8a6-4c35-a331-26944ffd9d22.png">
 
 
