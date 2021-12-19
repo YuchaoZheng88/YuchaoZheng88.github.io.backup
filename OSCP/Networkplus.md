@@ -194,4 +194,13 @@ Port forwarding:
 ## Cellular Network
 - GSM
 - TDMA: Time-Division Multiple Access
-- 
+
+## DNS records
+- A: IPv4 address.
+- AAAA: IPv6 address.
+- CNAME: alias.
+- SRV: Service record.
+- MX: Mail exchanger.
+- NS: Name server.
+- PTR: Pointer record. Reverse of A or AAAA record.
+- TXT: SPF, DKIM, 
