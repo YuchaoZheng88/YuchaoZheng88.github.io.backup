@@ -172,13 +172,26 @@ Port forwarding:
 - APIPA
 
 ## Assign IPv6
-**Like DHCPv4**
+
+**Like DHCPv4 assign from server**
+
 - client(udp/546)
 - server(udp/547)
 
-**Do not need a server to assign IP
-**MAC <--> EUI-64 (conversion)
+**Do not need a server to assign IP**
+
+- MAC <--> EUI-64 (conversion)
 - EUI: extended unique identifier
 - <img width="573" alt="image" src="https://user-images.githubusercontent.com/91292763/146657452-917d3544-a8a6-4c35-a331-26944ffd9d22.png">
 
+## Network Topologies
+- Softwares: Visio, OmniGraffle, Gliffy.com
 
+## wireless standards
+**802.11**
+- <img width="565" alt="image" src="https://user-images.githubusercontent.com/91292763/146660050-96da7327-29c1-4093-b6ba-96fa246b4d10.png">
+
+## Cellular Network
+- GSM
+- TDMA: Time-Division Multiple Access
+- 
