@@ -1,4 +1,5 @@
 # Network+
+https://www.youtube.com/playlist?list=PLG49S3nxzAnmpdmX7RoTOyuNJQAb-r-gd
 
 ## intro
 - Ephemeral port, Non-ephemeral port.
