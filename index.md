@@ -36,6 +36,11 @@
 [Rowbot Pentest Notes](https://guide.offsecnewbie.com/) ||| 
 [Hack the box for OSCP](https://forum.hackthebox.com/t/oscp-practice/531) ||| 
 
+[Try hack me](https://tryhackme.com/paths) ||| 
+[Vulnhub resource](https://www.vulnhub.com/resources/) ||| 
+[Wargame](https://overthewire.org/wargames/) ||| 
+
+
 ## General
 [Guifre Ruiz](https://guif.re/) ||| 
 [Iptable tutorial](https://www.frozentux.net/iptables-tutorial/chunkyhtml/index.html) ||| 
