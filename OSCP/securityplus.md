@@ -20,3 +20,12 @@ Malicious flash drive:
 - Configure as boot device. (Unpluged reboot, infect the computer)
 - Configure as Ethernet adapter. (modify traffic, act as wireless gateway)
 
+Race condition:
+- TOCTOU (Time-of-check to time-of-use)
+
+Mac flooding:
+- when MAC table filled up.
+- Switch send traffic to all interfaces.
+- Turn switch as a hub.
+- prevention: switch`s port security setting.
+
