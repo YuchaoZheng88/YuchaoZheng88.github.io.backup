@@ -19,3 +19,13 @@
 6. ``` ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/namelist.txt -H "Host: FUZZ.acmeitsupport.thm" -u http://10.10.123.130 ```
 7. ``` ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/namelist.txt -H "Host: FUZZ.acmeitsupport.thm" -u http://10.10.123.130 -fs {size} ``` -fs switch, which tells ffuf to ignore any results that are of the specified size.
 
+## Authentication Bypass
+fuzz posibble exist usernames.
+- https://github.com/ffuf/ffuf
+- ``` ffuf -w /usr/share/wordlists/SecLists/Usernames/Names/names.txt -X POST -d "username=FUZZ&email=x&password=x&cpassword=x" -H "Content-Type: application/x-www-form-urlencoded" -u http://10.10.94.177/customers/signup -mr "username already exists" ```
+-  -X argument specifies the request method.
+-  -d argument specifies the data that we are going to send.
+-  -H argument is used for adding additional headers to the request. setting the "Content-Type" to the webserver knows we are sending form data. 
+-  -u argument specifies the URL we are making the request to.
+-  -mr argument is the text on the page we are looking for to validate we've found a valid username.
+-  
