@@ -89,4 +89,8 @@ Warning: include(languages/../../../../../etc/passwd.php): failed to open stream
 - NOTE: the %00 trick is fixed and not working with PHP 5.3.4 and above.
 
 **Remote File Inclusion - RFI**
-
+- One requirement for RFI is that the ``` allow_url_fopen ``` option needs to be on.
+- ``` allow_url_include ```
+- https://www.php.net/manual/en/filesystem.configuration.php#ini.allow-url-fopen
+- lead server to execute code from attacker`s server.
+- 
