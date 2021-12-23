@@ -68,4 +68,7 @@ Local File Inclusion (LFI)
 
 Warning: include(languages/../../../../../etc/passwd.php): failed to open stream: No such file or directory in /var/www/html/THM-4/index.php on line 12
 - Conquer: ``` include("languages/../../../../../etc/passwd%00").".php"); ``` %00 or 0x00
+- NOTE: the %00 trick is fixed and not working with PHP 5.3.4 and above.
+
+
 
