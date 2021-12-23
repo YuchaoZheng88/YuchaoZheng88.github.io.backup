@@ -44,3 +44,8 @@
 ## IDOR
 -  Insecure Direct Object Reference
 
+**find IDOR in Encode IDs**
+- https://www.base64decode.org/; https://www.base64encode.org/ 
+
+**find IDOR in Hashed IDs**
+- https://crackstation.net/
