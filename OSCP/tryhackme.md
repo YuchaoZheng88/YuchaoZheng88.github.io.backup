@@ -94,3 +94,20 @@ Warning: include(languages/../../../../../etc/passwd.php): failed to open stream
 - https://www.php.net/manual/en/filesystem.configuration.php#ini.allow-url-fopen
 - lead server to execute code from attacker`s server.
 - 
+
+## Burp Suite
+**Extensions**
+- java, jython, jRuby
+- https://www.jython.org/
+- https://www.jruby.org/
+- Burp Suite Extender module: load extension, providing a marketplace.
+
+**Proxy**
+- https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-basic/
+- Intercept server response. ```Or``` ```Request``` ```Was Intercepted```
+
+**embeded browser**
+- ```Project options -> Misc -> Embedded Browser``` and check the ```Allow the embedded browser to run without a sandbox```
+- create a new user and run Burp Suite under a low privilege account.(security, recomanded)
+
+
