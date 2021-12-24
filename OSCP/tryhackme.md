@@ -160,3 +160,7 @@ email=<script>alert("Succ3ssful%2bXSS")</script>&content=hack+test
 - Notice that we also changed the ID that we are selecting from 2 to 0. By setting the ID to an invalid number, we  ensure that we don't retrieve anything with the original (legitimate) query; this means that the first row returned from the database will be our desired response from the injected query.
 - ``` /about/0 UNION ALL SELECT group_concat(column_name),null,null,null,null FROM information_schema.columns WHERE table_name="people" ```
 - retrieve all columns name of people table.
+
+## burpsuite intruder
+- Intruder is Burp Suite's in-built fuzzing tool.
+- similar to Wfuzz or Ffuf.
