@@ -1,3 +1,8 @@
+```
+## for room.
+ctrl+B for subtopic.
+```
+
 ## Content Discovery
 - Wappalyzer (https://www.wappalyzer.com/)
 - The Wayback Machine (https://archive.org/web/)
@@ -132,3 +137,5 @@ Upgrade-Insecure-Requests: 1
 email=<script>alert("Succ3ssful%2bXSS")</script>&content=hack+test
 ```
 - "%2b" -> "+"
+
+## Brup Suite: Repeater
