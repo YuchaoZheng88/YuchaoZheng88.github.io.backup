@@ -139,3 +139,17 @@ email=<script>alert("Succ3ssful%2bXSS")</script>&content=hack+test
 - "%2b" -> "+"
 
 ## Brup Suite: Repeater
+- Another way: by hand, curl, https://curl.se/
+- 0x0d -－"/r"
+- 0x0a -－"/n"
+- each line of response ends with "/r/n", same as "0d0a".
+
+**SQLi with repeater**
+- query ```http://10.10.39.188/about/2'``` with a ```'``` behind.
+- 
+``` 
+<code>Invalid statement: 
+    <code>SELECT firstName, lastName, pfpLink, role, bio FROM people WHERE id = 2'</code>
+</code>
+```
+- 
