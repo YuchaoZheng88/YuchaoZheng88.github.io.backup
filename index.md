@@ -1,4 +1,6 @@
 # YUCHAO is coding
+
+<script src="https://tryhackme.com/badge/836492"></script>
  
  `coding music       ☛` | <a href="https://www.bilibili.com/video/BV14h41167Y8" target="_blank">🎷🎸🎺🎻</a>
 ------------ | -------------
