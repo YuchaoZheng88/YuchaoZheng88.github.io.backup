@@ -164,3 +164,5 @@ email=<script>alert("Succ3ssful%2bXSS")</script>&content=hack+test
 ## burpsuite intruder
 - Intruder is Burp Suite's in-built fuzzing tool.
 - similar to Wfuzz or Ffuf.
+- sniper attack: pos1, pos2, 2 word a b. Try: pos1,a; pos1,b; a,pos2; b,pos2;
+- 
