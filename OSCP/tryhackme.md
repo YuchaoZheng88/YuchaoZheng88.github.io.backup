@@ -164,5 +164,10 @@ email=<script>alert("Succ3ssful%2bXSS")</script>&content=hack+test
 ## burpsuite intruder
 - Intruder is Burp Suite's in-built fuzzing tool.
 - similar to Wfuzz or Ffuf.
-- sniper attack: pos1, pos2, 2 word a b. Try: pos1,a; pos1,b; a,pos2; b,pos2;
-- 
+
+4 attacks:
+- sniper attack: pos1, pos2, 3 word a b c. Try: pos1,a; pos1,b; pos1,c;   a,pos2; b,pos2; c,pos2. One wordlist set.
+- Battering ram attack: puts the same payload in every position rather than in each position in turn. One wordlist set.
+- Pitchfork attack: uses one payload set per position. iterates through them all at once. Word lists should be identical length.
+- Cluster bomb attack: iterates through each payload set individually, making sure that every possible combination is tested.
+
