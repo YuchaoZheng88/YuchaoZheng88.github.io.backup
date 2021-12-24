@@ -95,7 +95,7 @@ Warning: include(languages/../../../../../etc/passwd.php): failed to open stream
 - lead server to execute code from attacker`s server.
 - 
 
-## Burp Suite
+## Burp Suite Basic
 **Extensions**
 - java, jython, jRuby
 - https://www.jython.org/
@@ -110,4 +110,25 @@ Warning: include(languages/../../../../../etc/passwd.php): failed to open stream
 - ```Project options -> Misc -> Embedded Browser``` and check the ```Allow the embedded browser to run without a sandbox```
 - create a new user and run Burp Suite under a low privilege account.(security, recomanded)
 
+**scope**
+- after set scope, we need: Proxy Options sub-tab and select ```And``` ```URL``` ```Is in target scope```
 
+**Post modified request**
+- URL encode: ctrl+U
+```
+POST /ticket/ HTTP/1.1
+Host: 10.10.117.83
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:80.0) Gecko/20100101 Firefox/80.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 37
+Origin: http://10.10.117.83
+Connection: close
+Referer: http://10.10.117.83/ticket/
+Upgrade-Insecure-Requests: 1
+
+email=<script>alert("Succ3ssful%2bXSS")</script>&content=hack+test
+```
+- "%2b" -> "+"
