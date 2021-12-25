@@ -182,4 +182,14 @@ email=<script>alert("Succ3ssful%2bXSS")</script>&content=hack+test
 ## Burp Suite: Other Modules
 **Decoder**
 - https://gchq.github.io/CyberChef/
+
+**Sequencer**
+- the effective entropy.
+
+## Burp Suite: Extender
+- Burp Suite "BApp" store.
+- all traffic passing through Burp Suite will be passed through each extension in order, starting at the top of the list and working down. 
+- https://github.com/portswigger/request-timer
+- <img width="474" alt="image" src="https://user-images.githubusercontent.com/91292763/147384694-64caa155-123c-495b-a734-917290d13658.png">
+- Jython. https://www.jython.org/download
 - 
