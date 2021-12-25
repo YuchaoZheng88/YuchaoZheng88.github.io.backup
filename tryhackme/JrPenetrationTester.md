@@ -177,4 +177,5 @@ email=<script>alert("Succ3ssful%2bXSS")</script>&content=hack+test
 -  update current request with parameters matched from final macro response. (this case, the "session" parameter.)
 -  Update current request with cookies from session handling cookie jar.
 - ref: https://portswigger.net/burp/documentation/desktop/options/sessions
+- csrf token: https://portswigger.net/web-security/csrf/tokens
 
