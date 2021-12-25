@@ -134,7 +134,7 @@ Connection: close
 Referer: http://10.10.117.83/ticket/
 Upgrade-Insecure-Requests: 1
 
-email=<script>alert("Succ3ssful%2bXSS")</script>&content=hack+test
+email=<scripttt>alert("Succ3ssful%2bXSS")</scripttt>&content=hack+test
 ```
 - "%2b" -> "+"
 
