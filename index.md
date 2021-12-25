@@ -23,9 +23,10 @@
 ---
 # Theory
   1. Certified Ethical Hacker [`click`](CEH/0.md)
-  2. OSCP[`click`](OSCP/0.md)
-  3. Algorithms(Leetcode) [`click`](Algorithms/0.md)
-  4. Languages(Datastructure) [`click`](Languages/0.md)
+  2. TryHackMe[`click`](tryhackme/0.md)
+  3. OSCP[`click`](OSCP/0.md)
+  4. Algorithms(Leetcode) [`click`](Algorithms/0.md)
+  5. Languages(Datastructure) [`click`](Languages/0.md)
 
 ---
 
