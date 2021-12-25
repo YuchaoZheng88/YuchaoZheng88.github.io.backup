@@ -179,3 +179,7 @@ email=<script>alert("Succ3ssful%2bXSS")</script>&content=hack+test
 - ref: https://portswigger.net/burp/documentation/desktop/options/sessions
 - csrf token: https://portswigger.net/web-security/csrf/tokens
 
+## Burp Suite: Other Modules
+**Decoder**
+- https://gchq.github.io/CyberChef/
+- 
