@@ -171,3 +171,10 @@ email=<script>alert("Succ3ssful%2bXSS")</script>&content=hack+test
 - Pitchfork attack: uses one payload set per position. iterates through them all at once. Word lists should be identical length.
 - Cluster bomb attack: iterates through each payload set individually, making sure that every possible combination is tested.
 
+CSRF Token bypass:
+-  a session cookie set in the response, as well as a CSRF (Cross-Site Request Forgery) token included in the form as a hidden field. If we refresh the page, we should see that both of these change with each request: this means that we will need to extract valid values for both every time we make a request.
+-  Run macro to "Get" the session every time before intruder.
+-  update current request with parameters matched from final macro response. (this case, the "session" parameter.)
+-  Update current request with cookies from session handling cookie jar.
+- ref: https://portswigger.net/burp/documentation/desktop/options/sessions
+
