@@ -12,30 +12,21 @@
 ![](https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/Heads.png?raw=true) | ```Welcome, have a nice day. ```
 
 
+---
+# Notes
 
+  1. TryHackMe[`click`](tryhackme/0.md)
+  2. Certified Ethical Hacker [`click`](CEH/0.md) 
+  3. Algorithms(Leetcode) [`click`](Algorithms/0.md)
+  4. Languages(Datastructure) [`click`](Languages/0.md)
+  5. OSCP[`click`](OSCP/0.md)
+  6. WebGoat [`click`](Practice/WebGoat/0.md)
+  7. Tools [`click`](tools/0.md)
 
 ---
 # Projects
   1. DosDefenceAnalysis [`click`](DosAnalysis/0.md)
-  1. WebCralwers
-  1. DLL Injection
-
----
-# Theory
-  1. Certified Ethical Hacker [`click`](CEH/0.md)
-  2. TryHackMe[`click`](tryhackme/0.md)
-  3. OSCP[`click`](OSCP/0.md)
-  4. Algorithms(Leetcode) [`click`](Algorithms/0.md)
-  5. Languages(Datastructure) [`click`](Languages/0.md)
-
----
-
-# Practice
-  1. WebGoat [`click`](Practice/WebGoat/0.md)
-  1. SeedLab
-  1. HackTheBox (IppSec)
-  1. Tools [`click`](tools/0.md)
-
+ 
 ---
 
 # Useful sites
