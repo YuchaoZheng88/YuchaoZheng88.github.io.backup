@@ -290,6 +290,8 @@ email=<scripttt>alert("Succ3ssful%2bXSS")</scripttt>&content=hack+test
 **whois**
 - https://www.ietf.org/rfc/rfc3912.txt
 
+## Nmap Live Host Discovery
+
 **nslookup and dig**
 - ``` nslookup tryhackme.com ```
 - ``` nslookup -type=A tryhackme.com 1.1.1.1 ``` find ipv4 in 1.1.1.1
@@ -340,9 +342,35 @@ Open port and listen
 - -vv	Very Verbose (optional)
 - -k	Keep listening after client disconnects
 
-## Nmap
+**Nmap**
 ![image](https://user-images.githubusercontent.com/91292763/147562879-93e285b4-8fea-4f67-b273-d2e39eb7ffd1.png)
 
-- ``` nmap -iL list_of_hosts.txt ```
-- 
+use list
+- ``` nmap -iL list_of_hosts.txt ``` -iL: input filename.
 
+ARP
+- ``` nmap -PR -sn 192.168.0.1/24 ``` -PR: indicates that you only want an ARP scan. -sn: No port scan.
+
+ICMP
+- ``` nmap -PE -sn 192.168.0.1/24 ``` -PE: ICMP.
+- Nmap didn’t need to send ICMP packets as it confirmed that these hosts are up based on the ARP responses it received.
+- if in same subnet, we can see the MAC address.
+
+TCP SYN
+- ``` sudo nmap -PS -sn 192.168.1.1/24 ``` -PS:  TCP SYN ping.
+- Normal syn ping do not need root user.
+- Privileged users (root and sudoers) can send TCP SYN packets and don’t need to complete the TCP 3-way handshake even if the port is open. Will send RST instead. Can **avoid some firewall rules**.
+- ``` -PS21 ``` target on port 21.
+- ``` -PS21-25 ``` 21 to 25.
+
+TCP ACK
+- ``` sudo nmap -PA -sn MACHINE_IP/24 ```
+- need root.
+
+UDP 
+- ``` sudo nmap -PU -sn 10.10.68.220/24 ```
+
+**Reverse-DNS Lookup**
+- Nmap’s default behaviour is to use reverse-DNS online hosts.
+- -n to skip this step.
+- -R to query the DNS server even for offline hosts
