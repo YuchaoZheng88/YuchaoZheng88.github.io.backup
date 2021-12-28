@@ -37,6 +37,8 @@
 [Sushant 747 OSCP Guide](https://sushant747.gitbooks.io/total-oscp-guide/content/the_basics.html) ||| 
 [Rowbot Pentest Notes](https://guide.offsecnewbie.com/) ||| 
 [Hack the box for OSCP](https://forum.hackthebox.com/t/oscp-practice/531) ||| 
+[skerritt](https://skerritt.blog/) ||| 
+
 
 [Try hack me](https://tryhackme.com/paths) ||| 
 [Vulnhub resource](https://www.vulnhub.com/resources/) ||| 
