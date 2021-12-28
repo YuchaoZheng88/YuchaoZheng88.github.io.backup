@@ -297,3 +297,12 @@ email=<scripttt>alert("Succ3ssful%2bXSS")</scripttt>&content=hack+test
 - ``` dig @1.1.1.1 tryhackme.com MX ```
 - ``` dig thmlabs.com txt ```
 
+DNS records can find more information, like subdomain, especially which not updated regularly.
+**dnsdumpster**
+- https://dnsdumpster.com/
+
+**Shodan.io**
+- https://help.shodan.io/the-basics/search-query-fundamentals
+- https://tryhackme.com/room/shodan
+- 
+
