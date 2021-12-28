@@ -304,5 +304,25 @@ DNS records can find more information, like subdomain, especially which not upda
 **Shodan.io**
 - https://help.shodan.io/the-basics/search-query-fundamentals
 - https://tryhackme.com/room/shodan
-- 
 
+## Active Reconnaissance
+**web browser**
+- FoxyProxy(add-one):https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
+- User-Agent Switcher and Manager: https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/
+- Wappalyzer https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/
+- ctrl+shift+I: sources -> script.js
+
+**ping**
+- ``` ping -n 10 10.10.117.50 ```
+
+**Traceroute**
+-  when TTL reaches 0, an ICMP Time-to-Live exceeded would be sent to the original sender.
+-  On linux, traceroute is send in UDP datagrams.
+
+**Telnet**
+- use Telnet to connect to any service and grab its banner.(not it designed for.)
+- ``` telnet 10.10.117.50 80 ``` then ``` GET / HTTP/1.1 ```
+- get the service information.
+
+**Netcat**
+- 
