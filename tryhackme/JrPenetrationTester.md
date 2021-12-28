@@ -283,3 +283,17 @@ email=<scripttt>alert("Succ3ssful%2bXSS")</scripttt>&content=hack+test
 **Write extender:**
 - https://portswigger.net/burp/extender/writing-your-first-burp-suite-extension
 
+## Passive Reconnaissance
+**The Unified Kill Chain**
+- https://www.unifiedkillchain.com/
+
+**whois**
+- https://www.ietf.org/rfc/rfc3912.txt
+
+**nslookup and dig**
+- ``` nslookup tryhackme.com ```
+- ``` nslookup -type=A tryhackme.com 1.1.1.1 ``` find ipv4 in 1.1.1.1
+- ``` dig tryhackme.com MX ```
+- ``` dig @1.1.1.1 tryhackme.com MX ```
+- ``` dig thmlabs.com txt ```
+
