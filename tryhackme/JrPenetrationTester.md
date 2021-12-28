@@ -313,7 +313,9 @@ DNS records can find more information, like subdomain, especially which not upda
 - ctrl+shift+I: sources -> script.js
 
 **ping**
-- ``` ping -n 10 10.10.117.50 ```
+count (2 are same)
+- ``` ping -n 10 10.10.117.50 ``` on MS Windows system.
+- ``` ping -c 10 10.10.117.50 ``` on Linux or Mac OS.
 
 **Traceroute**
 -  when TTL reaches 0, an ICMP Time-to-Live exceeded would be sent to the original sender.
@@ -325,4 +327,22 @@ DNS records can find more information, like subdomain, especially which not upda
 - get the service information.
 
 **Netcat**
+GET
+- Netcat supports both TCP and UDP protocols.
+- ``` nc 10.10.108.61 PORT ``` ``` hostname:abc ``` then, SHIFT+ENTER 
+
+Open port and listen
+- ``` nc -vnlp 1234 ```
+- -l	Listen mode
+- -p	Specify the Port number
+- -n	Numeric only; no resolution of hostnames via DNS
+- -v	Verbose output (optional, yet useful to discover any bugs)
+- -vv	Very Verbose (optional)
+- -k	Keep listening after client disconnects
+
+## Nmap
+![image](https://user-images.githubusercontent.com/91292763/147562879-93e285b4-8fea-4f67-b273-d2e39eb7ffd1.png)
+
+- ``` nmap -iL list_of_hosts.txt ```
 - 
+
