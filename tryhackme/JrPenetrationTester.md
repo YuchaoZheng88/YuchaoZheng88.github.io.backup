@@ -440,5 +440,24 @@ Window Scan:
 - ``` sudo nmap -sW 10.10.22.67 ```, like ACK scan, with more examines the TCP Window field of the RST packets returned.
 - TCP window scan pointed that three ports are detected as closed.
 - Although we know that these three ports are closed, we realize they responded differently, indicating that the firewall does not block them.
+- ACK and window scans are exposing the firewall rules, not the services.
 
+Custom Scan:
+- ``` sudo nmap --scanflags RSTSYNFIN {target} ``` 
 
+**Spoofing and Decoys**
+
+- ``` nmap -S {SPOOFED_IP} 10.10.121.57 ``` 
+- ``` --spoof-mac SPOOFED_MAC ``` This address spoofing is only possible if the attacker and the target machine are on the same Ethernet (802.3) network or same WiFi (802.11).
+- ``` nmap -D 10.10.0.1,10.10.0.2,RND,RND,ME 10.10.121.57 ``` decoy, hide among other IPs. RND, random IP.
+
+**Fragmented Packets**
+- A traditional firewall inspects, at least, the IP header and the transport layer header. 
+- A more sophisticated firewall would also try to examine the data carried by the transport layer.
+- ``` sudo nmap -sS -p80 -f 10.20.30.144 ``` 8 bytes after IP header, in each packet.
+- ``` sudo nmap -sS -p80 -ff 10.20.30.144 ``` 16 bytes after IP header, in each packet.
+- Nmap splits the packets into eight bytes or less after the IP header. So a 20-byte TCP header would be split into three packets.
+- The idea is to split up the TCP header over several packets to make it harder for packet filters, intrusion detection systems, and other annoyances to detect.
+
+**Idle/Zombie Scan**
+- 
