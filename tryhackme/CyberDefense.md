@@ -1,4 +1,7 @@
 ## OSI model
+![image](https://user-images.githubusercontent.com/91292763/147659481-efcff1b4-4c77-4bc2-9fda-135f9787b653.png)
+
+
 Layer 5 Session layer, protocols:
 - https://www.geeksforgeeks.org/session-layer-in-osi-model/
 - AppleTalk Data Stream Protocol (ADSP) 
