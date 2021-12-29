@@ -406,3 +406,39 @@ Port States:
 - ``` --min-parallelism=512 ``` pushes Nmap to maintain at least 512 probes in parallel
 - ``` -p- ``` all ports.
 
+## Nmap Advanced Port Scans
+
+Null Scan
+- ``` sudo nmap -sN 10.10.22.67 ```, all six flag bits are set to zero.
+- closed: RST,ACK. open|filtered: no reply.
+- need root.
+
+FIN Scan
+- ``` sudo nmap -sF 10.10.22.67 ```, FIN flag set.
+- closed: RST,ACK. open|filtered: no reply.
+
+Xmas Scan
+- ``` sudo nmap -sX 10.10.22.67 ```, FIN, PSH, and URG flags set.
+- closed: RST,ACK. open|filtered: no reply.
+
+Why:
+- A stateless firewall will check if the incoming packet has the SYN flag set to detect a connection attempt. 
+- Using a flag combination that does not match the SYN packet makes it possible to deceive the firewall and reach the system behind it. 
+- However, a stateful firewall will practically block all such crafted packets and render this kind of scan useless.
+
+TCP Maimon Scan:
+-  ``` sudo nmap -sM 10.10.22.67 ```, FIN and ACK bits are set.
+- no much use, open and close reply almost same.
+
+TCP ACK Scan:
+-  ``` sudo nmap -sA 10.10.22.67 ```, ACK flag set.
+-  can not find if port is open.
+-  this type of scan is more suitable to discover firewall rule sets and configuration.
+-  Result indicates that the firewall is blocking all other ports except for these three ports.
+
+Window Scan:
+- ``` sudo nmap -sW 10.10.22.67 ```, like ACK scan, with more examines the TCP Window field of the RST packets returned.
+- TCP window scan pointed that three ports are detected as closed.
+- Although we know that these three ports are closed, we realize they responded differently, indicating that the firewall does not block them.
+
+
