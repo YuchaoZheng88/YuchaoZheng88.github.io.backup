@@ -460,4 +460,10 @@ Custom Scan:
 - The idea is to split up the TCP header over several packets to make it harder for packet filters, intrusion detection systems, and other annoyances to detect.
 
 **Idle/Zombie Scan**
-- 
+- ``` nmap -sI ZOMBIE_IP 10.10.121.57 ```
+- This is accomplished by checking the IP identification (IP ID) value in the IP header.
+
+**More Details**
+- ``` sudo nmap -sS --reason 10.10.252.27 ``` get .
+- ``` -v ``` for verbose output or ``` -vv ``` for even more verbosity.
+- ``` -d ``` for debugging details or ``` -dd ``` for even more details.
