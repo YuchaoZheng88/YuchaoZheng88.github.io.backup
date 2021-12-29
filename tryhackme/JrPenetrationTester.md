@@ -374,3 +374,35 @@ UDP
 - Nmap’s default behaviour is to use reverse-DNS online hosts.
 - -n to skip this step.
 - -R to query the DNS server even for offline hosts
+
+## Nmap Basic Port Scans
+Port States:
+1. Open
+2. Closed
+3. Filtered
+4. Unfiltered
+5. Open|Filtered
+6. Closed|Filtered
+
+**TCP header**
+- https://datatracker.ietf.org/doc/html/rfc793.html
+- ![image](https://user-images.githubusercontent.com/91292763/147625615-9c0835f0-f8cb-4b0b-8db1-110eb867ebb1.png)
+- URG flag: set is processed immediately without consideration of having to wait on previously sent TCP segments.
+- Push flag： asking TCP to pass the data to the application promptly.
+
+**TCP Scan**
+- TCP connect scan. ``` nmap -sT {target} ```  full 3-way handshake, then RST. Only possible TCP port scan if not root.
+- TCP SYN scan. ``` nmap -sS {target} ``` need root. 
+
+**UDP Scan**
+- ``` nmap -sU {target} ``` Open: no response. Closed: ICMP destination unreachable. 
+
+**Scope and performance**
+- ``` -F ``` most common 100 ports
+- ``` -T0 ``` scans one port at a time and waits 5 minutes
+- ``` -T5 ``` is the most aggressive in terms of speed
+- ``` -T4 ``` is often used during CTFs
+- ``` --max-rate 10 ``` or ``` --max-rate=10 ``` ensures that your scanner is not sending more than ten packets per second.
+- ``` --min-parallelism=512 ``` pushes Nmap to maintain at least 512 probes in parallel
+- ``` -p- ``` all ports.
+
