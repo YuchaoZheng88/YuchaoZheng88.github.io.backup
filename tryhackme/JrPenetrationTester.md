@@ -467,3 +467,47 @@ Custom Scan:
 - ``` sudo nmap -sS --reason 10.10.252.27 ``` get .
 - ``` -v ``` for verbose output or ``` -vv ``` for even more verbosity.
 - ``` -d ``` for debugging details or ``` -dd ``` for even more details.
+
+## Nmap Post Port Scans
+**OS Detection and Traceroute**
+- ``` sudo nmap -sV 10.10.129.53 ``` Version detection.
+- ``` sudo nmap -sS -O 10.10.129.53 ``` OS detection.
+- ``` nmap -sS --traceroute 10.10.129.53 ``` traceroute, Standard traceroute starts with a packet of low TTL (Time to Live) and keeps increasing until it reaches the target. Nmap’s traceroute starts with a packet of high TTL and keeps decreasing it.
+
+ **Nmap Scripting Engine (NSE)**
+ - Lua language.
+ - path: /usr/share/nmap/scripts
+ - ``` -sC ``` Default scripts
+ 
+Script Category	Description
+- auth	Authentication related scripts
+- broadcast	Discover hosts by sending broadcast messages
+- brute	Performs brute-force password auditing against logins
+- default	Default scripts, same as -sC
+- discovery	Retrieve accessible information, such as database tables and DNS names
+- dos	Detects servers vulnerable to Denial of Service (DoS)
+- exploit	Attempts to exploit various vulnerable services
+- external	Checks using a third-party service, such as Geoplugin and Virustotal
+- fuzzer	Launch fuzzing attacks
+- intrusive	Intrusive scripts such as brute-force attacks and exploitation
+- malware	Scans for backdoors
+- safe	Safe scripts that won’t crash the target
+- version	Retrieve service versions
+- vuln	Checks for vulnerabilities or exploit vulnerable services
+
+http-date
+- ``` sudo nmap -sS -n --script "http-date" 10.10.16.134 ```
+
+find a certain script
+- ``` /usr/share/nmap/scripts# find -name '*cve2015-1635*' ```
+- with 'cve2015-1635' in the middle of the file name.
+
+**Saving the Output**
+Normal
+- ``` -oN FILENAME ```, N stands for normal
+
+Grepable
+- ``` -oG FILENAME ```
+
+XML
+- ``` -oX FILENAME ```
