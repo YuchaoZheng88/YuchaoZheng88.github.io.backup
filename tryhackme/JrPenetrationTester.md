@@ -539,3 +539,9 @@ use ftp
 - ftp software: vsftpd, ProFTPD, uFTP. Some web browsers also support FTP protocol.
 
 **SMTP**
+4 components:
+- Mail Submission Agent (MSA)
+- Mail Transfer Agent (MTA)
+- Mail Delivery Agent (MDA)
+- Mail User Agent (MUA)
+
