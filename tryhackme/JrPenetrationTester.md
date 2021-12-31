@@ -505,9 +505,37 @@ find a certain script
 **Saving the Output**
 Normal
 - ``` -oN FILENAME ```, N stands for normal
-
 Grepable
 - ``` -oG FILENAME ```
-
 XML
 - ``` -oX FILENAME ```
+
+## Protocols and Servers
+**http**
+- ``` telnet 10.10.115.51 80 ```
+- ``` GET /index.html HTTP/1.1 ```
+- ``` host: telnet ```
+- double 'Enter'
+
+**ftp**
+Use telnet
+- File Transfer Protocol, cleartext
+- ``` telnet 10.10.115.51 21 ```
+- ``` USER frank ```
+- ``` PASS D2xc9CgD ```
+- ``` STAT ``` can provide some added information
+- ``` SYST ``` command shows the System Type of the target (UNIX in this case)
+- ``` PASV ``` switches the mode to passive. Active: port 20. Passive: ports above 1023.
+- ``` TYPE A ``` switches the file transfer mode to ASCII.
+- ``` TYPE I ``` switches the file transfer mode to binary.
+- we cannot transfer a file using a simple client such as Telnet because FTP creates a separate connection for file transfer.
+
+use ftp
+- ``` ftp 10.10.115.51 ```
+- ``` ftp> ls ```
+- ``` ftp> ascii ```
+- ``` ftp> get README.txt ```
+- ``` ftp> exit ```
+- ftp software: vsftpd, ProFTPD, uFTP. Some web browsers also support FTP protocol.
+
+**SMTP**
