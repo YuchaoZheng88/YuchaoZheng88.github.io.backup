@@ -566,3 +566,57 @@ IMAP
 - changes will be saved on the IMAP server (MDA)
 - ``` telnet 10.10.124.6 143 ```
 - ``` LOGIN frank D2xc9CgD ```
+
+## Protocols and Servers 2
+
+**VS:**
+- Confidentiality, Integrity,   Availability (CIA)
+- Disclosure,      Alternation, Destruction (DAD)
+
+**Sniffing Attack**
+- Tcpdump, Wireshark, Tshark
+- ``` sudo tcpdump port 110 -A ``` checking email messages using POP3, in ASCII format.
+- mitigation： Transport Layer Security (TLS) has been added to HTTP, FTP, SMTP, POP3, IMAP and many others.
+
+**Man-in-the-Middle (MITM) Attack**
+- Ettercap. https://www.ettercap-project.org/
+- Bettercap. https://www.bettercap.org/
+-  With the help of Public Key Infrastructure (PKI) and trusted root certificates, Transport Layer Security (TLS) protects from MITM attacks.
+
+SSL, TSL are on presentation layer.
+- https://datatracker.ietf.org/doc/html/rfc6101
+
+ports:
+- HTTP	80	HTTPS	443
+- FTP	21	FTPS	990. secured using SSL/TLS
+- FTP   21	SFTP	22. secured using the SSH protocol, same port.
+- SMTP	25	SMTPS	465
+- POP3	110	POP3S	995
+- IMAP	143	IMAPS	993
+- DNS   DoT(DNS over TLS )
+- TELNET 23
+- SSH 22
+
+process:
+- Establish a TCP connection
+- Establish SSL/TLS connection
+- Send HTTP requests to the webserver
+
+SSH:
+- port 22.
+- ``` ssh username@10.10.202.115 ```
+
+SCP:
+- can use SSH to transfer files using SCP (Secure Copy Protocol) based on the SSH protocol
+- ``` scp mark@10.10.202.115:/home/mark/archive.tar.gz ~ ``` remote to local
+- ``` scp backup.tar.bz2 mark@10.10.202.115:/home/mark/ ``` local to remote
+
+**Password Attack**
+- Hydra. https://github.com/vanhauser-thc/thc-hydra
+- ``` hydra -l username -P wordlist.txt server service ```
+- server: the hostname or IP address of the target server.
+- service: the service which you are trying to launch the dictionary attack.
+- ``` -s PORT ``` Use in case of non-default service port number
+- ``` -d ``` Display debugging output if the verbose output is not helping
+- ``` -V ``` or ``` -vV ``` Show the username and password combinations being tried
+
