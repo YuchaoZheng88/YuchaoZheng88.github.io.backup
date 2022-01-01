@@ -620,3 +620,23 @@ SCP:
 - ``` -d ``` Display debugging output if the verbose output is not helping
 - ``` -V ``` or ``` -vV ``` Show the username and password combinations being tried
 
+## Vulnerabilities 101
+**types**
+- Operating System
+- (Mis)Configuration-based
+- Weak or Default Credentials
+- Application Logic
+- Human-Factor
+
+**Scoring Vulnerabilities**
+CVSS
+- https://www.kennasecurity.com/resources/prioritization-to-prediction-report/
+- CVSS, https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator
+- open source, VPR not.
+- start in 2005.
+
+VPR 
+- Vulnerability Priority Rating.
+- takes into account the relevancy of a vulnerability, while CVSS does not.
+
+**Vulnerability Databases**
