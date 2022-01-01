@@ -541,7 +541,28 @@ use ftp
 **SMTP**
 4 components:
 - Mail Submission Agent (MSA)
-- Mail Transfer Agent (MTA)
-- Mail Delivery Agent (MDA)
+- Mail Transfer Agent (MTA):  (SMTP)
+- Mail Delivery Agent (MDA):  (POP3) or (IMAP)
 - Mail User Agent (MUA)
 
+SMTP
+- is used to communicate with an MTA server.
+- default port 25.
+- ``` telnet MACHINE_IP 25 ```
+
+POP3
+- your mail client (MUA) will connect to the POP3 server (MDA), authenticate, and download the messages.
+- download the email messages from a Mail Delivery Agent (MDA) server
+- default port 110
+- ``` telnet 10.10.124.6 110 ```
+- ``` USER frank ```
+- ``` PASS D2xc9CgD ```
+- ``` STAT ```
+
+IMAP
+- Internet Message Access Protocol (IMAP)
+- default port 143
+- possible to keep your email synchronized across multiple devices (and mail clients), POP3 can not.
+- changes will be saved on the IMAP server (MDA)
+- ``` telnet 10.10.124.6 143 ```
+- ``` LOGIN frank D2xc9CgD ```
