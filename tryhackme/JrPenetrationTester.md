@@ -664,4 +664,9 @@ Vulnerability types:
 - Rapid7, https://www.rapid7.com/db/
 - GitHub, search GitHub by keywords such as "PoC", "vulnerability"
 - Searchsploit, offline copy of Exploit-DB
+- ``` searchsploit online book store ``` search the service "online book store"
+- ``` searchsploit -m php/webapps/47887.py ``` copy the exploit
+- ``` python 47887.py http://10.10.18.54 ``` run the exploit
+
+
 
