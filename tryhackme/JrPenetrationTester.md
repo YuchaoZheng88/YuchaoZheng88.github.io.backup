@@ -688,6 +688,12 @@ Vulnerability types:
 - Post: useful on the final stage of the penetration testing process listed above, post-exploitation.
 
 **msfconsole**
-
+- ``` msf6 > help set ```
+- ``` msf6 > history ```
+- ``` msf6 > use exploit/windows/smb/ms17_010_eternalblue ```
+- ``` msf6 exploit(windows/smb/ms17_010_eternalblue) > show payloads ```  payloads that can be used with the ms17-010 Eternalblue exploit.
+- ``` msf6 exploit(windows/smb/ms17_010_eternalblue) > info ``` display detailed information
+- ``` msf6 > search ms17-010 ``` searches using CVE numbers, exploit names (eternalblue, heartbleed, etc.), or target system.  ``` use 0 ``` use the listed number.
+- ``` msf6 > search type:auxiliary telnet ``` search results to only include auxiliary module.
 
 
