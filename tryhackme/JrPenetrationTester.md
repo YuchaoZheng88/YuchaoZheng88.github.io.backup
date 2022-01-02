@@ -640,3 +640,17 @@ VPR
 - takes into account the relevancy of a vulnerability, while CVSS does not.
 
 **Vulnerability Databases**
+NVD
+- NVD (National Vulnerability Database) https://nvd.nist.gov/vuln/full-listing
+- "Common Vulnerabilities and Exposures" (Or CVE for short)
+- wanna cry: CVE-2017-0144
+
+
+Exploit-DB 
+- https://www.exploit-db.com/
+
+## Exploit Vulnerabilities
+
+**Automated Vs. Manual Vulnerability Research**
+- nessus. https://www.tenable.com/products/nessus
+- 
