@@ -668,5 +668,26 @@ Vulnerability types:
 - ``` searchsploit -m php/webapps/47887.py ``` copy the exploit
 - ``` python 47887.py http://10.10.18.54 ``` run the exploit
 
+## Metasploit: Introduction
+
+**main components**
+- msfconsole: The main command-line interface.
+- Modules: supporting modules such as exploits, scanners, payloads, etc.
+- Tools: Stand-alone tools that will help vulnerability research, vulnerability assessment, or penetration testing. Some of these tools are msfvenom, pattern_create and pattern_offset.
+
+**components**
+- /opt/metasploit-framework-5101/modules/
+- Auxiliary: Any supporting module, such as scanners, crawlers and fuzzers, can be found here.
+- Encoders: Encoders will allow you to encode the exploit and payload in the hope that a signature-based antivirus solution may miss them.
+- Evasion: While encoders will encode the payload, they should not be considered a direct attempt to evade antivirus software.
+- Exploits: Exploits, neatly organized by target system.
+- NOPs: NOPs (No OPeration) do nothing, literally.
+- Payloads: Payloads are codes that will run on the target system. singles; stagers -> stages.
+- "generic/shell_reverse_tcp", inline (or single) payload
+- "windows/x64/shell/reverse_tcp", staged payload
+- Post: useful on the final stage of the penetration testing process listed above, post-exploitation.
+
+**msfconsole**
+
 
 
