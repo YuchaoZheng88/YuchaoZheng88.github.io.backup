@@ -653,4 +653,15 @@ Exploit-DB
 
 **Automated Vs. Manual Vulnerability Research**
 - nessus. https://www.tenable.com/products/nessus
-- 
+
+Vulnerability types:
+- Security Misconfigurations
+- Broken Access Control
+- Insecure Deserialization
+- Injection
+
+**Finding Manual Exploits**
+- Rapid7, https://www.rapid7.com/db/
+- GitHub, search GitHub by keywords such as "PoC", "vulnerability"
+- Searchsploit, offline copy of Exploit-DB
+
