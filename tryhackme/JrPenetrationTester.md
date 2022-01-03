@@ -695,5 +695,6 @@ Vulnerability types:
 - ``` msf6 exploit(windows/smb/ms17_010_eternalblue) > info ``` display detailed information
 - ``` msf6 > search ms17-010 ``` searches using CVE numbers, exploit names (eternalblue, heartbleed, etc.), or target system.  ``` use 0 ``` use the listed number.
 - ``` msf6 > search type:auxiliary telnet ``` search results to only include auxiliary module.
-
+- ``` msf5 exploit(windows/smb/ms17_010_eternalblue) > unset all ```
+- 
 
