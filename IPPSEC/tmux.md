@@ -10,7 +10,7 @@ prefix key:
 - PK
 
 Create new window:
-- PK, press C 
+- PK, press ``` c ```
 
 Swith window:
 - PK, press window number
@@ -18,7 +18,18 @@ Swith window:
 Tmux config:
 - https://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/
 
+Session:
+- ``` tmux ls ``` show sessions
+- ``` tmux attach -t {session_name} ``` attach session
+- PK, ``` d ``` detach session
 
+Copy mode, search
+- PK, ``` [ ```
+- Ctrl + s
+
+
+
+---
 
 Commands:
 
