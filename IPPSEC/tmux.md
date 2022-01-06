@@ -15,6 +15,13 @@ Create new window:
 Swith window:
 - PK, press window number
 
+Tmux config:
+- https://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/
+
+
+
+Commands:
+
 - ``` C-b ```         Send the prefix key (C-b) through to the application.
 - ``` C-o ```         Rotate the panes in the current window forwards.
 - ``` C-z ```         Suspend the tmux client.
