@@ -995,3 +995,6 @@ list payloads:
 **Metasploit multi/handler**
 - 3 options:  payload, LHOST and LPORT.
 - ``` exploit -j ``` run in background.
+
+**WebShells**
+- 
