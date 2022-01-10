@@ -1092,3 +1092,5 @@ set payload windows/x64/meterpreter/reverse_tcp
 run 
 ```
 
+## Linux PrivEsc
+
