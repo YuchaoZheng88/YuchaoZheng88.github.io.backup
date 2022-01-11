@@ -1095,6 +1095,27 @@ run
 ## Linux PrivEsc
 
 **Enumeration**
-- ``` $ hostname ```
-- ``` $ uname -a ```
-- ``` $ cat /proc/version ```
+- ``` $ hostname ``` hostname 
+- ``` $ uname -a ``` 
+- ``` $ cat /proc/version ``` kernel version
+- ``` $ cat /etc/os-release ``` system version
+- ``` $ cat /etc/issue ``` system version
+- ``` ps -A ```  View all running processes
+- ``` ps axjf ``` View process tree
+- ``` ps aux ``` show processes for all users (a), display the user that launched the process (u),  processes that are not attached to a terminal (x)
+- ``` netstat -a ``` shows all listening ports and established connections.
+- ``` netstat -at ``` or ``` netstat -au ```, show tcp or udp
+- ``` netstat -l ``` list ports in "listening" mode
+- ``` find . -name flag1.txt ``` find file in current directory
+- ``` find /home -name flag1.txt ``` find file in home directory
+- ``` ind / -type d -name config ``` find directory in /
+- ``` find / -type f -perm 0777 ``` find file with permission 777
+- ``` find / -perm a=x ``` find executable files
+- ``` find /home -user frank ```
+- ``` find / -mtime 10 ``` find files modified in last 10 days.
+- ``` find / -atime 10 ``` find files access in last 10 days.
+- ``` find / -cmin -60 ``` find files changed in last 60 minutes.
+- ``` find / -size 50M ``` find files with size of 50m.
+- ``` find / -size +100M ``` find files larger than 100m.
+- ``` find / -size +100M -type f 2>/dev/null ``` redirect errors to “/dev/null” and have a cleaner output
+- 
