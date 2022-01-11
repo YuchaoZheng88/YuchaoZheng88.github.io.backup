@@ -1094,3 +1094,7 @@ run
 
 ## Linux PrivEsc
 
+**Enumeration**
+- ``` $ hostname ```
+- ``` $ uname -a ```
+- ``` $ cat /proc/version ```
