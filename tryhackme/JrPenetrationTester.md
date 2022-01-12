@@ -1129,3 +1129,9 @@ run
 **sudo**
 - https://gtfobins.github.io/
 - find what we can do of a sudo program
+- use **LD_PRELOAD** to cheat. https://rafalcieslak.wordpress.com/2013/04/02/dynamic-linker-tricks-using-ld_preload-to-cheat-inject-features-and-investigate-programs/
+
+**SUID**
+- 
+**Capabilities**
+- https://man7.org/linux/man-pages/man7/capabilities.7.html
