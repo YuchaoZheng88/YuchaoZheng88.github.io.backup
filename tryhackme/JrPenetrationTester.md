@@ -1118,4 +1118,10 @@ run
 - ``` find / -size 50M ``` find files with size of 50m.
 - ``` find / -size +100M ``` find files larger than 100m.
 - ``` find / -size +100M -type f 2>/dev/null ``` redirect errors to “/dev/null” and have a cleaner output
-- 
+
+**Automated Enumeration Tools**
+- LinPeas: https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS
+- LinEnum: https://github.com/rebootuser/LinEnum
+- LES (Linux Exploit Suggester): https://github.com/mzet-/linux-exploit-suggester
+- Linux Smart Enumeration: https://github.com/diego-treitos/linux-smart-enumeration
+- Linux Priv Checker: https://github.com/linted/linuxprivchecker
