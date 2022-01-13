@@ -1156,7 +1156,7 @@ int rand(){
 - ``` LD_PRELOAD=$PWD/unrandom.so ./random_nums ``` not random, but random when ``` ./random_nums ```
 - ``` export LD_PRELOAD=$PWD/unrandom.so ``` set to env, and, not random even ``` ./ random_nums ```
 - ``` printenv LD_PRELOAD ``` Check environment value
-- ``` ldd random_nums ```
+- ``` ldd random_nums ``` Check program shared objects
 
 **suid**
 - 
