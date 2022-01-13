@@ -1129,9 +1129,33 @@ run
 **sudo**
 - https://gtfobins.github.io/
 - find what we can do of a sudo program
-- use **LD_PRELOAD** to cheat. https://rafalcieslak.wordpress.com/2013/04/02/dynamic-linker-tricks-using-ld_preload-to-cheat-inject-features-and-investigate-programs/
 
-**SUID**
+**Leverage LD_PRELOAD**
+- use **LD_PRELOAD** to cheat. https://rafalcieslak.wordpress.com/2013/04/02/dynamic-linker-tricks-using-ld_preload-to-cheat-inject-features-and-investigate-programs/
+- ``` 
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+ 
+int main(){
+  srand(time(NULL));
+  int i = 10;
+  while(i--) printf("%d\n",rand()%100);
+  return 0;
+}
+```
+- ``` gcc random_num.c -o random_num ```
+-
+```
+int rand(){
+    return 42; //the most random number in the universe
+}
+```
+- ``` gcc -shared -fPIC unrandom.c -o unrandom.so ```
+- aa
+
+**suid**
 - 
+
 **Capabilities**
 - https://man7.org/linux/man-pages/man7/capabilities.7.html
