@@ -1153,7 +1153,10 @@ int rand(){
 }
 ```
 - ``` gcc -shared -fPIC unrandom.c -o unrandom.so ```
-- aa
+- ``` LD_PRELOAD=$PWD/unrandom.so ./random_nums ``` not random, but random when ``` ./random_nums ```
+- ``` export LD_PRELOAD=$PWD/unrandom.so ``` set to env, and, not random even ``` ./ random_nums ```
+- ``` printenv LD_PRELOAD ``` Check environment value
+- ``` ldd random_nums ```
 
 **suid**
 - 
