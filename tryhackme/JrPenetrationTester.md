@@ -1132,7 +1132,8 @@ run
 
 **Leverage LD_PRELOAD**
 - use **LD_PRELOAD** to cheat. https://rafalcieslak.wordpress.com/2013/04/02/dynamic-linker-tricks-using-ld_preload-to-cheat-inject-features-and-investigate-programs/
-- ``` 
+- random_num.c
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -1145,8 +1146,8 @@ int main(){
 }
 ```
 - ``` gcc random_num.c -o random_num ```
--
-```
+- unrandom.c
+```c
 int rand(){
     return 42; //the most random number in the universe
 }
