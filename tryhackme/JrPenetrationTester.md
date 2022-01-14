@@ -1167,3 +1167,7 @@ int rand(){
 
 **Capabilities**
 - https://man7.org/linux/man-pages/man7/capabilities.7.html
+- ``` getcap -r / 2>/dev/null ```
+
+**cron jobs**
+- 
