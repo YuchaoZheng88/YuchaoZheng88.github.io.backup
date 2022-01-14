@@ -1159,7 +1159,11 @@ int rand(){
 - ``` ldd random_nums ``` Check program shared objects
 
 **suid**
-- 
+- SUID (Set-user Identification) and SGID (Set-group Identification)
+- allow files to be executed with the permission level of the file owner or the group owner
+- ``` find / -type f -perm -04000 -ls 2>/dev/null ```
+- ``` unshadow shadow.txt passwd.txt > secret.txt ```
+- ``` john --wordlist=/usr/share/wordlists/rockyou.txt secret.txt ``` 
 
 **Capabilities**
 - https://man7.org/linux/man-pages/man7/capabilities.7.html
