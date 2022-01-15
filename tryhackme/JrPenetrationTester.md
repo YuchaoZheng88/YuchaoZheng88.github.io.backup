@@ -1179,4 +1179,6 @@ int rand(){
 **PATH**
 - ``` echo $PATH ```
 - ``` find / -writable 2>/dev/null ``` find writable folders
+- ``` find / -writable 2>/dev/null | cut -d "/" -f 2,3 | grep -v proc | sort -u ``` 
+- ``` grep -v ``` invert-match, select the non-matching lines. do not show "/proc/{ID}" lines.
 - 
