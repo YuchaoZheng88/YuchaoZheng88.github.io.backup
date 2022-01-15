@@ -1181,4 +1181,7 @@ int rand(){
 - ``` find / -writable 2>/dev/null ``` find writable folders
 - ``` find / -writable 2>/dev/null | cut -d "/" -f 2,3 | grep -v proc | sort -u ``` 
 - ``` grep -v ``` invert-match, select the non-matching lines. do not show "/proc/{ID}" lines.
-- 
+- ``` export PATH=/tmp:$PATH ``` 
+- when a root program "test" with "SUID" bit set, and it calls ``` system("thm") ```, we need to add executable "thm" to $PATH. And it can run as root after "test" executed. 
+
+
