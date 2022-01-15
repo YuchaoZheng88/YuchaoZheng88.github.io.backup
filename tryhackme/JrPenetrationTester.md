@@ -1174,4 +1174,9 @@ int rand(){
 - ``` getcap -r / 2>/dev/null ```
 
 **cron jobs**
+- ``` cat /etc/crontab ```
+
+**PATH**
+- ``` echo $PATH ```
+- ``` find / -writable 2>/dev/null ``` find writable folders
 - 
