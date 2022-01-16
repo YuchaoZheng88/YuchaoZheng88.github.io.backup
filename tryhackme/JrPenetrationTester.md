@@ -1205,3 +1205,12 @@ Vulnerable machine
 - https://github.com/sagishahar/lpeworkshop
 
 
+command:
+- ``` whoami /priv ``` Current user’s privileges
+- ``` net users ``` list users
+- ``` net user {username} ``` detail of a user
+- ``` net localgroup ``` User groups defined on the system
+- ``` net localgroup {groupname} ``` list members of a group
+- ``` systeminfo ``` show system information
+- ``` systeminfo | findstr /B /C:"OS Name" /C:"OS Version" ``` grep the output
+- 
