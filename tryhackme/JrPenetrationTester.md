@@ -1192,4 +1192,16 @@ int rand(){
 - ``` showmount -e {targetIP} ``` on attackers`, to check the target opened path
 - ``` mkdir {attacker_path} ```
 - ``` mount -o rw {targetIP}:/{showed open path} {attacker_path} ```
-- 
+
+## Windows Privesc
+
+automated enumeration script
+- winPEAS or PowerUp.ps1
+
+Manual checklist
+- https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md
+
+Vulnerable machine
+- https://github.com/sagishahar/lpeworkshop
+
+
