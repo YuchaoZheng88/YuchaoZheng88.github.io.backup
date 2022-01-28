@@ -1194,7 +1194,6 @@ Manual checklist
 Vulnerable machine
 - https://github.com/sagishahar/lpeworkshop
 
-
 command:
 - ``` whoami /priv ``` Current user’s privileges
 - ``` net users ``` list users
@@ -1206,3 +1205,21 @@ command:
 
 search file:
 - ``` findstr /si password *.txt ```
+- /si: Searches the current directory and all subdirectories (s), ignores upper case / lower case differences (i)
+
+list updates installed on the target system:
+- ``` wmic qfe get Caption,Description,HotFixID,InstalledOn ```
+- Windows Management Instrumentation (WMI)
+
+Network Connections: ``` netstat -ano ```
+
+Scheduled Tasks:``` schtasks ```, ``` schtasks /query /fo LIST /v ``` 
+
+Drivers: ``` driverquery ```
+
+Antivirus: ``` sc query windefend ```, ``` sc queryex type=service ```
+
+**Tools**:
+- WinPEAS ``` winpeas.exe > outputfile.txt ``` https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS
+- PowerUp https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc
+
