@@ -1222,4 +1222,14 @@ Antivirus: ``` sc query windefend ```, ``` sc queryex type=service ```
 **Tools**:
 - WinPEAS ``` winpeas.exe > outputfile.txt ``` https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS
 - PowerUp https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc
+- Windows Exploit Suggester. https://github.com/AonCyberLabs/Windows-Exploit-Suggester
 
+``` wmic product get name,version,vendor ```
+
+**DLL Hijacking**
+- DLL search order
+- https://docs.microsoft.com/en-us/windows/win32/dlls/dynamic-link-library-search-order
+- Process Monitor (ProcMon)
+
+Creating the malicious DLL file
+- 
