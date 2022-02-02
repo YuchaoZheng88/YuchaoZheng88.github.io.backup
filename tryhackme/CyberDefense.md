@@ -12,3 +12,5 @@ Layer 5 Session layer, protocols:
 
 Layer 4 Transport layer:
 - TCP, segments. UDP, datagram.
+
+## SMB
