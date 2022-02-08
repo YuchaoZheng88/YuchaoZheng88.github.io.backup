@@ -34,6 +34,7 @@
 
 ## OSCP preperation
 [John J Hacking](https://johnjhacking.com/blog/the-oscp-preperation-guide-2020/) ||| 
+[emaragkos](https://emaragkos.gr/recommended-machines) ||| 
 [OSCP Journey](https://arvandy.com/) ||| 
 [Sushant 747 OSCP Guide](https://sushant747.gitbooks.io/total-oscp-guide/content/the_basics.html) ||| 
 [Rowbot Pentest Notes](https://guide.offsecnewbie.com/) ||| 
