@@ -11,6 +11,10 @@
 ------------ | -------------
 ![](https://github.com/YuchaoZheng88/YuchaoZheng88.github.io/blob/main/resources/Heads.png?raw=true) | ```Welcome, have a nice day. ```
 
+---
+# Search
+
+{% include search.html %}
 
 ---
 # Notes
